@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #35424a;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+
+/*stylizacja formularza*/
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /*szerokość formularza*/
+    margin: 0 auto; /*wyśrodkowanie formularza*/
+}
+
+#contactForm label {
+    margin: 10px 0 5px; /*odstępy między etykietami a polem tekstowym*/
+    text-align: left;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submitButton {
+    background-color: #5bcd3d; /*kolor przycisku*/
+    color: white; /*kolor tekstu na przycisku*/
+    padding: 10px 20px; /*odstępy wewnątrz przycisku*/
+    border: none; /*brak obramowania przycisku*/
+    border-radius: 5px; /*zaokrąglenie krawędzi przycisku*/
+    cursor: pointer; /*kursor zmienia się na wskazujący*/
+    font-size: 16px; /*rozmiar tekstu na przycisku*/
+    margin: 0 auto; /*wyśrodkowanie przycisku*/
+    display: block; /*przycisk musi być blokiem, aby wyśrodkować go*/
+}
+
+#submitButton:hover {
+    background-color: #218838;
+}

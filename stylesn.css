@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nowoczesny nagłówek */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+
+a {
+    text-decoration: none; /*ogólne style dla linków*/
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Stylizacja tabeli */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+}
+
+
+table th:hover {
+    background-color: #f5f5f5; /* Stylizacja wiersza nagłówka i kolumny kup po najechaniu*/
+    color: black;
+}
+
+table tr:hover {
+    background-color: #e0e0e0; /* Kolor tła wiersza po najechaniu */
+}
+
+/* Responsywne obrazy */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Karty */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Stylizacja dla nagłówka na małych ekranach */
+@media (max-width: 767px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .logo {
+        max-width: 50%;
+    }
+}
