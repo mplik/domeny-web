@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Formularz Kontaktowy</title>
+    <link rel="stylesheet" type="text/css" href="styles2np.css">
+</head>
+<body>
+    <h1>Formularz Kontaktowy</h1>
+    <form action="https://formspree.io/f/movqwwyb" method="POST"> 
+    <label for="name">Imię:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+     <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+     <label for="message">Wiadomość:</label>
+      <textarea id="message" name="message" required></textarea>
+<br>
+<label>
+    <input type="checkbox" name="consent" required>
+    Wyrażam zgodę na przesyłanie mi informacji handlowych na podany przeze mnie adres e-mail.
+</label>
+<br>
+ <button type="submit">Wyślij</button>
+</form>
+<div class="privacy-notice">
+    <p>Informujemy, że wysyłając formularz, akceptujesz nasze <a href="pp.html" target="_blank" rel="noopener noreferrer">warunki polityki prywatności</a>.a Twoje dane będą wykorzystywane wyłącznie w celu przesyłania informacji handlowych oraz
+    udzielania odpowiedzi na Twoje zapytania.</p>
+</div>
+<script>
+    document.querySelector("form").onsubmit = function() {
+        alert("Dziękujemy za przesłanie formularza! Odpowiemy wkrótce.");
+    };
+</script>
+</body>
+</html>
