@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #5bcd3d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+@media(max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+    button {
+        padding: 12px;
+    }
+}
+
+.privacy-notice {
+    margin-top: 20px; /*odstęp między formularzem a informacjami o polityce prywatności*/
+    font-size: 12px; /*rozmiar czcionki*/
+    color: #555; /*kolor tekstu*/
+    text-align: center; /*wyśrodkowanie tekstu*/
+}
+
+.privacy-notice a {
+    color: #007bff; /*kolor linków*/
+    text-decoration: underline; /* podkreślenie linku*/
+}
+
+.privacy-notice a:hover {
+    color: #0056b3;/*podkreślenie po najechaniu myszką*/
+}

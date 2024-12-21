@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0px;
+    padding: 20px;
+}
+
+.cytat {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+    margin: 20px 0;
+}
+
+#colier {
+    font-weight: bold;
+}
+
+#tekst {
+    color: #333;
+    background-color: #e9ecef;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.strona_wsparcia .cytat {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #5bcd3d; /*zmiana koloru border left na zielony*/
+    padding-left: 10px;
+    margin: 20px 0;
+}
+
+.strona_wsparcia
+#colier1 {
+    font-weight: bold;
+}
+
+.strona_wsparcia
+#text1 {
+    color: #333;
+    background-color: #e9ecef;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+img {
+    max-width: 25%;
+    height: auto;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+.logo {
+    max-width: 25%;
+    height: auto;
+    border: none;
+}
