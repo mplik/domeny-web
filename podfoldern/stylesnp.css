@@ -65,15 +65,16 @@ p {
 }
 
 img {
-    max-width: 25%;
+    max-width: 100%;
     height: auto;
     border: none;
 }
 
 /* Dodaj nowy styl dla obrazka o klasie centered */
 img.centered {
-    width: 200px;
-    height: 200px; /* Dodaj wysokość, aby obrazek był kwadratowy */
+    width: 50%;
+    max-width: 250px; /*maxymalna szerokość 250px*/
+    height: auto; /* Dodaj wysokość, aby obrazek był kwadratowy */
     display: block;
     margin: 0 auto;
     border-radius: 50%; /* Zaokrąglenie do kształtu koła */
