@@ -76,7 +76,7 @@ img.centered {
     max-width: 250px; /*maxymalna szerokość 250px*/
     height: auto; /* Dodaj wysokość, aby obrazek był kwadratowy */
     display: block;
-    margin: 0 auto;
+    margin: 20px auto 0; /*dodaje margines górny 20px, auto - centruje obrazek, 0 - brak marginesu dolnego*/
     border-radius: 50%; /* Zaokrąglenie do kształtu koła */
 }
 
