@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strona Główna</title>
     <link rel="stylesheet" href="stylesn.css" />
+    <script src="menu.js" defer></script>
   </head>
   <body>
     <header>
@@ -15,31 +16,15 @@
           class="logo"></a>
       <h1>Mplik.pl</h1>
       <nav>
-        <ul>
-          <li>
-            <a href="https://billing.stripe.com/p/login/fZedROdPQ6rb6CkdQQ"
-              >Panel klienta</a
-            >
-          </li>
-          <li>
-            <a href="podfoldern/strona_w_podfolderzen.html"
-              >Strona w podfolderze</a
-            >
-          </li>
-          <li>
-            <a href="podfoldern/formularz_kontaktowyn.html"
-              >Formularz kontaktowy</a
-            >
-          </li>
+        <ul id="nav-menu" style="display: none;">
+          <li><a href="https://billing.stripe.com/p/login/fZedROdPQ6rb6CkdQQ">Panel klienta</a ></li>
+          <li><a href="podfoldern/strona_w_podfolderzen.html">Strona w podfolderze</a></li>
+          <li><a href="podfoldern/formularz_kontaktowyn.html">Formularz kontaktowy</a></li>
           <li><a href="podfoldern/aboutn.html">O nas</a></li>
-          <li>
-            <a href="podfoldern/strona_wsparcia_w_podfolderzen.html"
-              >Strona wsparcia</a>
-          </li>
-          <li>
-            <a href="podfoldern/faq.html">FAQ</a>
-          </li>
+          <li><a href="podfoldern/strona_wsparcia_w_podfolderzen.html">Strona wsparcia</a></li>
+          <li><a href="podfoldern/faq.html">FAQ</a></li>
         </ul>
+        <button id="nav-toggle">Menu</button>
       </nav>
     </header>
     <main>
@@ -173,7 +158,17 @@
           </tbody>
         </table>
       </section>
-    </main>
+      <section class="info-cards">
+        <h3>Karta informacyjna</h3>
+        <div class="info-card" onclick="toggleCard(this)">
+        <h3>Informacja 1</h3>
+        <p class="card-content" style="display: none;">Szczegóły informacji 1. <strong>Szeroki wybór domen: </strong>Nasza platforma zapewnia dostęp do bogatej bazy domen, co pozwala na łatwe znalezienie idealnej nazwy dla Twojej marki lub projektu.</p>
+        </div>
+        <div class="info-card" onclick="toggleCard(this)">
+          <h3>Informacja 2</h3>
+          <p class="card-content" style="display: none;">Szczegóły informacji 2. <strong>Wsparcie dla użytkowników: </strong>Oferujemy profesjonalne wsparcie techniczne oraz porady dotyczące zakupu i sprzedaży domen, aby każdy uzytkownik mógł czuć się pewnie w swoich decyzjach.</p>
+          </div>
+      </section>
     <footer>
       <p>
         Jeśli masz jakieś pytania dotyczące naszych domen lub chcesz dowiedzieć
@@ -182,5 +177,6 @@
         Czekamy na Twoje wiadomości! Odwiedź nasze <a href="podfoldern/faq.html">FAQ</a> aby dowiedzieć się więcej.
       </p>
     </footer>
+    </main>
   </body>
 </html>
