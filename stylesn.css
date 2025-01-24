@@ -103,7 +103,7 @@ img {
 }
 
 .card-content {
-    display: flex /*stylizacja dla interaktywnych card*/
+    display: flex; /*stylizacja dla interaktywnych card*/
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
@@ -124,5 +124,31 @@ img {
 
     .logo {
         max-width: 50%;
+    }
+}
+
+.marquee {
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Stylizacja dla paska informacyjnego */
+    width: 100%;
+    background-color: black;
+    color: #ffff00;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.marquee p {
+    display: inline-block; /* Stylizacja dla paska informacyjnego */
+    padding-left: 100%; /* Stylizacja dla paska informacyjnego */
+    animation: marquee 50s linear infinite; /* Stylizacja dla paska informacyjnego */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
     }
 }
