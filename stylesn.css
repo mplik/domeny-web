@@ -138,6 +138,13 @@ img {
     overflow: hidden;
 }
 
+.highlight {
+    background-color: #ffff00; /* Stylizacja dla kuponu */
+    border: 2px dotted red; /* Stylizacja dla kuponu */
+    padding: 2px; /* Stylizacja dla kuponu */
+    color: red; /* Stylizacja dla kuponu */
+}
+
 .marquee p {
     display: inline-block; /* Stylizacja dla paska informacyjnego */
     padding-left: 100%; /* Stylizacja dla paska informacyjnego */
