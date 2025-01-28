@@ -1,4 +1,4 @@
-# Domeny-Web Giełda Domen
+# Domeny-Web Giełda Domen MPLIK.PL
 
 ## Opis
 Projekt domeny-web Giełda Domen to projekt MPLIK.PL. Projekt umożliwia wybór domen z oferty dostępnej w tabeli domen na giełdzie umieszczonej na stronie w projekcie Domeny-Web. Po wybraniu określonej domeny (o ile jest ona jeszcze dostępna) użytkownik może dokonać opłaty poprzez kliknięcie przycisku zamawiam dołączonego w tabeli ze zintegrowaną platformą płatności oraz dokonać cesji wybranej domeny poprzez wypełnienie i przesłanie pod wskazany adres operatora formularza przeniesienia domeny. Po wniesieniu opłaty formularz cesji przygotowany do wypełnienia zostanie automatycznie udostępniony po pozytywnym zatwierdzeniu płatności. Link do pobrania formularza dostępny jest również na platformie [strona wsparcie]
