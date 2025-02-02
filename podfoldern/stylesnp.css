@@ -53,16 +53,24 @@ p {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #007bff;
+    background-color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
+    border: 1px solid black; /*dodaje czarny obramowanie*/
+    border-bottom: 3px solid #0056b3; /*dodaje dolne obramowanie o grubości 3px i kolorze #0056b3*/
+    border-left: 3px solid #0056b3; /*dodaje lewe obramowanie o grubości 3px i kolorze #0056b3*/
+    padding: 10px 20px; /*dodaje padding wewnętrzny 10px na górze i dole, 20px po bokach*/
     
 }
 
 .button:hover {
     background-color: #0056b3;
+    color: white;
+    border-bottom: 3px solid black; /*zmiana dolnego obramowania na czarne o grubości 1px*/
+    border-left: 3px solid black; /*zmiana lewego obramowania na czarne o grubości 1px*/
 }
+
 
 img {
     max-width: 100%;
@@ -89,4 +97,10 @@ a {
     max-width: 25%;
     height: auto;
     border: none;
+}
+
+.button:active {
+    background-color: #0056b3;
+    transform: translate(2px); /*przesunięcie o 2px*/
+   
 }
