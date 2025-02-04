@@ -149,7 +149,7 @@
               <th><a href="https://buy.stripe.com/8wM17pefZ0zb23eeV2">Kup</a></th>
               </tr>
               <tr>
-                <td><a href="https://buy.stripe.com/8wM17pefZ0zb23eeV2">lauriekings.com</a></td>
+                <td><a href="https://buy.stripe.com/8wM17pefZ0zb23eeV2">dzinpo.pl</a></td>
                 <td>24-12-17</td>
                 <td>1457,99pln</td>
                 <th><a href="https://buy.stripe.com/8wM17pefZ0zb23eeV2">Kup</a></th>
@@ -176,6 +176,7 @@
           </tbody>
         </table>
         <canvas id="popularity-chart" width="400" height="200"></canvas> <!--wykres popularności domen-->
+        <button onclick="updateChartData()">Aktualizuj wykres</button> <!--przycisk aktualizacji wykresu-->
       </section>
       <section class="info-cards">
         <h3>Karta informacyjna</h3>
@@ -223,6 +224,15 @@
         }
       }
     });
+
+    function updateChartData() { //funkcja aktualizacji danych wykresu
+      const newLabels = ['adidos.pl', 'giermania.pl', 'mgrinz.com', 'nagicie.pl', 'kghmpm.com']; //nowe etykiety
+      const newData = [5, 10, 7, 3, 8]; //nowe dane
+      
+      popularityChart.data.labels = newLabels; //przypisanie nowych etykiet
+      popularityChart.data.datasets[0].data = newData; //przypisanie nowych danych
+      popularityChart.update(); //aktualizacja wykresu
+    }
     </script>
   </body>
 </html>
