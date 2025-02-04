@@ -6,6 +6,7 @@
     <title>Strona Główna</title>
     <link rel="stylesheet" href="stylesn.css" />
     <script src="menu.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!--dodanie biblioteki wykresów-->
   </head>
   <body>
     <header>
@@ -174,6 +175,7 @@
             <!-- Zawartość tabeli -->
           </tbody>
         </table>
+        <canvas id="popularity-chart" width="400" height="200"></canvas> <!--wykres popularności domen-->
       </section>
       <section class="info-cards">
         <h3>Karta informacyjna</h3>
@@ -199,5 +201,28 @@
       <p>#GIEŁDA #DOMEN #mplik.pl #InwestycjeOnline #Giełda #DOMEN #info - więcej informacji o naszej giełdzie uzyskasz zapisując się do naszego <a href="https://buy.stripe.com/6oE7vN3Blgy9azKbIT">NEWSLETTERA</a> oraz subskrybując. #GIEŁDA #DOMEN #INFO - wytnij kupon rabatowy <span class="highlight">GIT25</span> wklej do NewsletterA rabatów.</p>
       <p>#GIEŁDA #DOMEN #mplik.pl #InwestycjeOnline #Giełda #DOMEN #info - więcej informacji o naszej giełdzie uzyskasz zapisując się do naszego NEWSLETTERA oraz subskrybując</p>
     </div>
+    <script>
+    const ctx = document.getElementById('popularity-chart').getContext('2d'); //pobranie kontekstu
+    const popularityChart = new Chart(ctx, { //utworzenie nowego wykresu
+      type: 'bar', //typ wykreślenia
+      data: {
+        labels: ['coronegra.pl', 'veina.eu', 'zgkim.com', 'epaszport.com', 'virale.eu'], //etykiety
+        datasets: [{
+          label: 'Popularność domen', //etykieta
+          data: [10, 5, 3, 7, 8], //dane
+          backgroundColor: 'rgba(75, 192, 192, 0.2)', //kolor tła
+          borderColor: 'rgba(75, 192, 192, 1)', //kolor obramowania
+          borderWidth: 1 //grubość obramowania
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true //początek osi Y od 0
+          }
+        }
+      }
+    });
+    </script>
   </body>
 </html>
