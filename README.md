@@ -16,6 +16,7 @@ Na stronie głównej znajduje się kilka zakładek takich jak:
 ## Wprowadzenie
 [Obejrzyj filmik na YouTube][watchYouTubeShort]
 
+![Zrzut ekranu aplikacji][zobacz zrzut ekranu]
 
 Panel klienta dostępny w zakładce – panel klienta jest hostowany na stronie Stripe. Panel jest wstępnie skonfigurowany do korzystania. Można w nim sprawdzić faktury, dokonane transakcje, skonfigurować, zmienić lub poprawić swoje dane.
 
@@ -42,4 +43,6 @@ Otwórz plik `index.html` w przeglądarce, aby przejść do używania.
 Ten projekt jest dostępny na licencji MIT.
 
 [watchYouTubeShort]: https://youtube.com/shorts/lLUIFieyUPs?si=g5q1jRpHASltx2Q5
+[zobacz zrzut ekranu]:
+https://github.com/mplik/domeny-web/blob/main/zasoby/zrzut_ekranu-gie%C5%82da_domen_plik.readme.md.png?raw=true
 
