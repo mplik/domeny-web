@@ -14,9 +14,8 @@ Na stronie głównej znajduje się kilka zakładek takich jak:
 - strona rezerwacji: (https://calendar.app.google/d5gdKCn4YUnaG42X6)
 
 ## Wprowadzenie
-[Zrzut]
-(podfoldern/images/zasoby/zrzut_ekranu-giełda_domen_plik.readme.md.jpg)
-[Obejrzyj filmik na YouTube][https://youtube.com/shorts/lLUIFieyUPs?si=g5q1jRpHASltx2Q5] 
+[Zrzut]: [zrzut-obraz]
+[Obejrzyj filmik na YouTube][watchYouTubeShort]
 
 Panel klienta dostępny w zakładce – panel klienta jest hostowany na stronie Stripe. Panel jest wstępnie skonfigurowany do korzystania. Można w nim sprawdzić faktury, dokonane transakcje, skonfigurować, zmienić lub poprawić swoje dane.
 
@@ -42,4 +41,6 @@ Otwórz plik `index.html` w przeglądarce, aby przejść do używania.
 ## Licencja
 Ten projekt jest dostępny na licencji MIT.
 
-[videoLink]: Film
+
+[zrzut-obraz]: index.html/zasobu/zrzut_ekranu-giełda_domen_plik.readme.md.png "Zrzut ekranu"
+[watchYouTubeShort]: https://youtube.com/shorts/lLUIFieyUPs?si=g5q1jRpHASltx2Q5
