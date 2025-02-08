@@ -13,6 +13,11 @@ Na stronie głównej znajduje się kilka zakładek takich jak:
 - FAQ
 - strona rezerwacji: (https://calendar.app.google/d5gdKCn4YUnaG42X6)
 
+## Wprowadzenie
+![Zrzut ekranu filu]
+(podfoldern/images/zasoby/zrzut_ekranu-giełda_domen_plik.readme.md)
+[Obejrzyj filmik na YouTube](Film app) 
+
 Panel klienta dostępny w zakładce – panel klienta jest hostowany na stronie Stripe. Panel jest wstępnie skonfigurowany do korzystania. Można w nim sprawdzić faktury, dokonane transakcje, skonfigurować, zmienić lub poprawić swoje dane.
 
 Formularz kontaktowy znajdujący się na stronie głównej służy do sprecyzowania i przesłania swoich zamówień.
