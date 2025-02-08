@@ -43,6 +43,6 @@ Otwórz plik `index.html` w przeglądarce, aby przejść do używania.
 Ten projekt jest dostępny na licencji MIT.
 
 
-[zrzut-obraz]: ./index.html/zasobu/zrzut_ekranu-giełda_domen_plik.readme.md.png "Zrzut ekranu"
+[zrzut-obraz]: ./zasobu/zrzut_ekranu-giełda_domen_plik.readme.md.png "Zrzut ekranu"
 [watchYouTubeShort]: https://youtube.com/shorts/lLUIFieyUPs?si=g5q1jRpHASltx2Q5
-[imgResourceLink]: ./index.html/zasobyzrzut_ekranu-giełda_domen_plik.readme.md.png
+[imgResourceLink]: ./zasobyzrzut_ekranu-giełda_domen_plik.readme.md.png
