@@ -12,6 +12,11 @@ Na stronie głównej znajduje się kilka zakładek takich jak:
 - FAQ
 - [Strona rezerwacji](https://calendar.app.google/d5gdKCn4YUnaG42X6)
 
+## Wprowadzenie
+[Obejrzyj filmik na YouTube][watchYouTubeShort]
+
+![Zrzut ekranu aplikacji][zobacz zrzut ekranu]
+
 Panel klienta dostępny w zakładce – panel klienta jest hostowany na stronie Stripe. Panel jest wstępnie skonfigurowany do korzystania. Można w nim sprawdzić faktury, dokonane transakcje, skonfigurować, zmienić lub poprawić swoje dane.
 
 Formularz kontaktowy znajdujący się na stronie głównej służy do sprecyzowania i przesłania swoich zamówień.
@@ -42,4 +47,10 @@ Otwórz plik `index.html` w przeglądarce, aby przejść do używania.
 ## Licencja
 Ten projekt jest dostępny na licencji MIT.
 
+
 [def]: https://github.com/mplik/domeny-web/blob/main/podfoldern/images/logo/Stripe%20Climate%20Badge%20-%20Small.png?raw=true
+
+[watchYouTubeShort]: https://youtube.com/shorts/lLUIFieyUPs?si=g5q1jRpHASltx2Q5
+[zobacz zrzut ekranu]:
+https://github.com/mplik/domeny-web/blob/main/zasoby/zrzut_ekranu-gie%C5%82da_domen_plik.readme.md.png?raw=true
+
