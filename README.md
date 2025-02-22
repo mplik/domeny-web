@@ -23,6 +23,12 @@ Strona wsparcia służy do zgłaszania i rozwiązywania problemów podczas inter
 
 Sekcja FAQ odpowiada na kilka prostych, najczęściej zadawanych pytań.
 
+## Usuwanie Co2 z atmosfery
+
+Zobacz jak MPLIK.PL - sprzedaż Stripe angażuje się w walkę ze zmianami klimatycznymi, przedstawiając innowacyjne rozwiązania do przyspieszenia usuwania dwutlenku węgla. MPLIK.PL - sprzedaż jest częścią Stripe - Climate koalicji firm dążących do przyspieszenia usuwania Co2 z atmosfery.
+
+<a href="https://climate.stripe.com/Ue8acz">zobacz <img src="[def]" alt="Usuwanie dwutlenku węgla" width="30"/></a>
+
 ## Instalacja
 Brak jest specjalnych kroków instalacyjnych. Wystarczy otworzyć plik w przeglądarce. Funkcje dostępne na platformie są intuicyjne, łatwe do zrozumienia i użycia.
 
@@ -36,3 +42,5 @@ Otwórz plik `index.html` w przeglądarce, aby przejść do używania.
 
 ## Licencja
 Ten projekt jest dostępny na licencji MIT.
+
+[def]: ttps://github.com/mplik/domeny-web/blob/main/podfoldern/images/logo/Stripe%20Climate%20Badge%20-%20Small.png?raw=tru
