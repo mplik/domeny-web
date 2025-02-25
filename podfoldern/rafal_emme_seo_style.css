@@ -56,16 +56,34 @@ footer {
 #contactForm {
     display: flex;
     flex-direction: column;
+    align-items: center; /*wyśrodkowanie elementów w pionie*/
+    justify-content: center; /*wyśrodkowanie elementów w poziomie*/
     max-width: 400px; /*szerokość formularza*/
     margin: 0 auto; /*wyśrodkowanie formularza*/
+    height: 100vh; /*wysokość formularza*/
+    border: 2px solid #ccc; /*obramowanie formularza*/
+    border-radius: 10px; /*zaokrąglenie rogów formularza*/
+    padding: 20px; /*odstępy wewnątrz formularza*/
+    background-color: #f9f9f9; /*kolor tła formularza*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*cień formularza*/
+    transition: all 0.3s ease; /*płynne przejścia*/
+}
+
+#contactForm:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /*zmiana cienia po najechaniu myszką*/
 }
 
 #contactForm label {
+    display: flex;
+    align-items: center; /*wyśrodkowanie etykiety w pionie*/
     margin: 10px 0 5px; /*odstępy między etykietami a polem tekstowym*/
     text-align: left;
 }
 
-#contactForm input,
+#contactForm input[type="checkbox"] {
+    margin-right: 10px; /* odstęp między polem tekstowym a etykietą */
+}
+
 #contactForm textarea {
     width: 100%;
     padding: 10px;
@@ -84,8 +102,9 @@ footer {
     font-size: 16px; /*rozmiar tekstu na przycisku*/
     margin: 0 auto; /*wyśrodkowanie przycisku*/
     display: block; /*przycisk musi być blokiem, aby wyśrodkować go*/
+    transition: all 0.3s ease; /*płynne przejścia*/
 }
 
 #submitButton:hover {
-    background-color: #218838;
+    background-color: #218838; /*zmiana koloru przycisku po najechaniu myszką*/
 }
