@@ -78,18 +78,25 @@ footer {
     align-items: center; /*wyśrodkowanie etykiety w pionie*/
     margin: 10px 0 5px; /*odstępy między etykietami a polem tekstowym*/
     text-align: left;
+    width: 100%;
 }
 
-#contactForm input[type="checkbox"] {
-    margin-right: 10px; /* odstęp między polem tekstowym a etykietą */
-}
-
+#contactForm input[type="text"],
+#contactForm input[type="email"],
 #contactForm textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+#contactForm textarea {
+    resize: vertical;
+}
+
+#contactForm input[type="checkbox"] {
+    margin-right: 10px; /* Odstęp między polem tekstowym a etykietą */
 }
 
 #submitButton {
@@ -107,4 +114,11 @@ footer {
 
 #submitButton:hover {
     background-color: #218838; /*zmiana koloru przycisku po najechaniu myszką*/
+}
+
+@media (max-width: 768px) {
+    #contactForm {
+        max-width: 100%; /* Formularz zajmuje pełną szerokość na urządzeniach mobilnych */
+        padding: 10px; /* Zmniejszenie paddingu na urządzeniach mobilnych */
+    }
 }
