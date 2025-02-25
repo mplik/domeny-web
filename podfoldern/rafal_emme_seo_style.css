@@ -122,3 +122,56 @@ footer {
         padding: 10px; /* Zmniejszenie paddingu na urządzeniach mobilnych */
     }
 }
+
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Zielony kolor */
+    color: white; /* Kolor tekstu */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Margines górny */
+}
+.button:hover {
+    background-color: #45a049; /* Ciemniejszy zielony po najechaniu */
+}
+
+/* Style dla kontenera certyfikatu */
+.cert-container {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    align-items: center; /* Wyśrodkowanie w pionie */
+    height: 100vh; /* Wysokość na 100% wysokości widoku */
+    position: fixed; /* Utrzymuje kontener w stałej pozycji */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Białe tło z przezroczystością */
+    z-index: 1000; /* Na wierzchu innych elementów */
+}
+
+.cert-container img {
+    max-width: 90%; /* Szerokość maksymalna obrazu */
+    max-height: 90%; /* Wysokość maksymalna obrazu */
+    border: 5px solid #4CAF50; /* Zielona ramka wokół obrazu */
+    border-radius: 10px; /* Zaokrąglone rogi */
+}
+
+/* Styl dla przycisku zamykania */
+.close-button {
+    position: absolute; /* Ustawienie przycisku w górnym rogu */
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #f44336; /* Czerwony kolor */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efekt płynnego przejścia */
+}
+
+.close-button:hover {
+    background-color: #d32f2f; /* Ciemniejszy czerwony po najechaniu */
+}
