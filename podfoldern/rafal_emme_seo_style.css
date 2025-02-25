@@ -60,7 +60,7 @@ footer {
     justify-content: center; /*wyśrodkowanie elementów w poziomie*/
     max-width: 400px; /*szerokość formularza*/
     margin: 0 auto; /*wyśrodkowanie formularza*/
-    height: 100vh; /*wysokość formularza*/
+    height: auto; /*wysokość formularza*/
     border: 2px solid #ccc; /*obramowanie formularza*/
     border-radius: 10px; /*zaokrąglenie rogów formularza*/
     padding: 20px; /*odstępy wewnątrz formularza*/
