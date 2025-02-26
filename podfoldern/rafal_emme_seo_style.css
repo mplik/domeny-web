@@ -136,6 +136,11 @@ footer {
     background-color: #45a049; /* Ciemniejszy zielony po najechaniu */
 }
 
+.button:active {
+    background-color: #3e8e41; /* Jeszcze ciemniejszy zielony po kliknięciu */
+    transform: translate(0, 2px); /* Przesunięcie o 2 piksele w dół */
+}
+
 /* Style dla kontenera certyfikatu */
 .cert-container {
     display: flex;
