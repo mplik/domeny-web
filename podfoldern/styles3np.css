@@ -73,7 +73,9 @@ h2 {
 }
 
 footer {
-    background: #333;
+    background-image: url('background/img-background.jpg'); /* Add the background image */
+    background-size: cover; /* Make sure the image covers the entire header */
+    background-position: center; /* Center the image */
     color: #fff;
     text-align: center;
     padding: 1rem 0;
