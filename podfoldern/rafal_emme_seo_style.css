@@ -180,3 +180,8 @@ footer {
 .close-button:hover {
     background-color: #d32f2f; /* Ciemniejszy czerwony po najechaniu */
 }
+
+.close-button:active {
+    background-color: #b71c1c; /* Jeszcze ciemniejszy czerwony po kliknięciu */
+    transform: translate(0, 2px); /* Przesunięcie o 2 piksele w dół */
+}
