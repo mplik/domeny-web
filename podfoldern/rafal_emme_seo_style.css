@@ -81,10 +81,6 @@ footer {
     width: 100%;
 }
 
-#contactForm label[for="consent"] {
-    font-size: 10px; /*font size for consent label*/
-}
-
 #contactForm input[type="text"],
 #contactForm input[type="email"],
 #contactForm textarea {
