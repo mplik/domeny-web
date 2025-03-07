@@ -31,6 +31,10 @@ Zobacz jak MPLIK.PL - sprzedaż Stripe angażuje się w walkę ze zmianami klima
 ## Instalacja
 Brak jest specjalnych kroków instalacyjnych. Wystarczy otworzyć plik w przeglądarce. Funkcje dostępne na platformie są intuicyjne, łatwe do zrozumienia i użycia.
 
+Instrukcje dotyczące instalacji znajdziesz w poniższym filmiku:
+
+[![Obejrzyj film na YouTube](https://img.youtube.com/vi/CfpvZGFXpLo/0.jpg)][def2]
+
 ## Użycie
 Otwórz plik `index.html` w przeglądarce, aby przejść do używania.
 
@@ -43,3 +47,4 @@ Otwórz plik `index.html` w przeglądarce, aby przejść do używania.
 Ten projekt jest dostępny na licencji MIT.
 
 [def]: https://github.com/mplik/domeny-web/blob/main/podfoldern/images/logo/Stripe%20Climate%20Badge%20-%20Small.png?raw=true
+[def2]: https://youtube.com/watch?v=CfpvZGFXpLo&si=28nt9k5sC_ELiEV2
