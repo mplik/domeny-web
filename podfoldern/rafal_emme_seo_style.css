@@ -54,6 +54,8 @@ footer {
 
 /*stylizacja formularza*/
 #contactForm {
+    font-family: Georgia, 'Times New Roman', Times, serif; /*czcionka formularza*/
+    font-size: 14px; /*rozmiar czcionki formularza*/
     display: flex;
     flex-direction: column;
     align-items: center; /*wyśrodkowanie elementów w pionie*/
@@ -97,6 +99,10 @@ footer {
 
 #contactForm input[type="checkbox"] {
     margin-right: 10px; /* Odstęp między polem tekstowym a etykietą */
+}
+
+.consent-text {
+    font-size: 10px; /*font size for consent text*/
 }
 
 #submitButton {
