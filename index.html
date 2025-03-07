@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strona Główna</title>
+    <meta property="og:title" content="Giełda Domen" /> <!--dodanie metadanych Open Graph-->
+    <meta property="og:description" content="Znajdź swoją wymarzoną domenę na giełdzie domen Mplik.pl" />
+    <meta property="og:image" content="https://github.com/mplik/domeny-web/blob/main/podfoldern/images/relacje_domeny_mplik.pl.jpg?raw=true" />
+    <meta name="twitter:image" content="https://github.com/mplik/domeny-web/blob/main/podfoldern/images/relacje_domeny_mplik.pl.jpg?raw=true" />
+    <meta property="og:video" content="https://github.com/mplik/domeny-web/blob/main/videos/gielda_domen.mp4" /> <!--dodanie metadanych wideo-->
+    <meta property="og:video:type" content="video/mp4" /> <!--dodanie metadanych wideo-->
+    <meta property="og:video:width" content="640" /> <!--dodanie metadanych wideo-->
+    <meta property="og:video:height" content="360" />
+    <meta property="og:url" content="https://mplik.github.io/domeny-web/" />
     <link rel="stylesheet" href="stylesn.css" />
     <script src="menu.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!--dodanie biblioteki wykresów-->
   </head>
   <body>
     <header>
-      <a href="/domeny/indexn.html">
+      <a href="index.html">
         <img
-          src="https://mplik.pl/wp-content/uploads/2024/06/cropped-cropped-55a00deb-1001-4bba-b25d-5f173aa551bd-1.png"
+          src="podfoldern/images/logo/logo_mplik.pl.png"
           alt="Logo MPLIK.PL"
           class="logo"></a>
       <h1>Mplik.pl</h1>
@@ -148,9 +158,9 @@
               <th><a href="https://buy.stripe.com/8wM17pefZ0zb23eeV2">Kup</a></th>
               </tr>
               <tr>
-                <td><a href="https://buy.stripe.com/8wM17pefZ0zb23eeV2">lauriekings.com</a></td>
+                <td><a href="https://buy.stripe.com/8wM17pefZ0zb23eeV2">dzinpo.pl</a></td>
                 <td>24-12-17</td>
-                <td>1457,99pln</td>
+                <td>1557,99pln</td>
                 <th><a href="https://buy.stripe.com/8wM17pefZ0zb23eeV2">Kup</a></th>
               </tr>
               <tr>
@@ -174,6 +184,8 @@
             <!-- Zawartość tabeli -->
           </tbody>
         </table>
+        <canvas id="popularity-chart" width="400" height="200"></canvas> <!--wykres popularności domen-->
+        <button onclick="updateChartData()">Aktualizuj wykres</button> <!--przycisk aktualizacji wykresu-->
       </section>
       <section class="info-cards">
         <h3>Karta informacyjna</h3>
@@ -199,5 +211,37 @@
       <p>#GIEŁDA #DOMEN #mplik.pl #InwestycjeOnline #Giełda #DOMEN #info - więcej informacji o naszej giełdzie uzyskasz zapisując się do naszego <a href="https://buy.stripe.com/6oE7vN3Blgy9azKbIT">NEWSLETTERA</a> oraz subskrybując. #GIEŁDA #DOMEN #INFO - wytnij kupon rabatowy <span class="highlight">GIT25</span> wklej do NewsletterA rabatów.</p>
       <p>#GIEŁDA #DOMEN #mplik.pl #InwestycjeOnline #Giełda #DOMEN #info - więcej informacji o naszej giełdzie uzyskasz zapisując się do naszego NEWSLETTERA oraz subskrybując</p>
     </div>
+    <script>
+    const ctx = document.getElementById('popularity-chart').getContext('2d'); //pobranie kontekstu
+    const popularityChart = new Chart(ctx, { //utworzenie nowego wykresu
+      type: 'bar', //typ wykreślenia
+      data: {
+        labels: ['coronegra.pl', 'veina.eu', 'zgkim.com', 'epaszport.com', 'virale.eu'], //etykiety
+        datasets: [{
+          label: 'Popularność domen', //etykieta
+          data: [10, 5, 3, 7, 8], //dane
+          backgroundColor: 'rgba(75, 192, 192, 0.2)', //kolor tła
+          borderColor: 'rgba(75, 192, 192, 1)', //kolor obramowania
+          borderWidth: 1 //grubość obramowania
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true //początek osi Y od 0
+          }
+        }
+      }
+    });
+
+    function updateChartData() { //funkcja aktualizacji danych wykresu
+      const newLabels = ['adidos.pl', 'giermania.pl', 'mgrinz.com', 'nagicie.pl', 'kghmpm.com']; //nowe etykiety
+      const newData = [5, 10, 7, 3, 8]; //nowe dane
+      
+      popularityChart.data.labels = newLabels; //przypisanie nowych etykiet
+      popularityChart.data.datasets[0].data = newData; //przypisanie nowych danych
+      popularityChart.update(); //aktualizacja wykresu
+    }
+    </script>
   </body>
 </html>
