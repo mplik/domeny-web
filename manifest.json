@@ -1,0 +1,20 @@
+{
+    "name": "Giełda Domen",
+    "short_name": "Mplik",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2d89ef",
+    "icons": [
+      {
+        "src": "podfoldern/images/logo/Stripe Climate Badge - Small.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "podfoldern/images/logo/Stripe Climate Badge - Big.png",
+        "sizes": "1024x1024",
+        "type": "image/png"
+      }
+    ]
+  }
