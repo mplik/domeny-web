@@ -1,7 +1,8 @@
 {
     "name": "Giełda Domen",
-    "short_name": "Mplik",
-    "start_url": "/index.html",
+    "short_name": "Giełda Domen",
+    "description": "Giełda Domen",
+    "start_url": "index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#2d89ef",
