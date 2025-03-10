@@ -2,6 +2,7 @@
     "name": "Giełda Domen",
     "short_name": "Giełda Domen",
     "description": "Giełda Domen",
+    "id": "/domeny-web/index.html",
     "start_url": "index.html",
     "display": "standalone",
     "background_color": "#ffffff",
