@@ -6,7 +6,8 @@ const urlsToCache = [
   '/menu.js',
   '/manifest.json',
   '/podfoldern/images/logo/Stripe Climate Badge - Small.png',
-  '/podfoldern/images/logo/Stripe Climate icon - Big.png'
+  '/podfoldern/images/logo/Stripe Climate icon - Big.png',
+  '/fallback.html' // Upewnij się, że ten plik istnieje
 ];
 
 // Instalowanie service worker
