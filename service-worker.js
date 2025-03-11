@@ -30,7 +30,7 @@ self.addEventListener('fetch', (event) => {
           return response;
         }
         return fetch(event.request).catch(() => {
-          return caches.match('/fallback.html'); // Upewnij się, że ten plik istnieje
+          return caches.match('fallback.html'); // Upewnij się, że ten plik istnieje
         });
       })
   );
