@@ -50,6 +50,29 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Stylizacja przycisku menu */
+#nav-toggle {
+    background-color: #4CAF50; /* Zielone tło */
+    color: white; /* Biały tekst */
+    padding: 10px 20px; /* Odstępy wewnętrzne */
+    border: solid 1px; /* Obramowanie przycisku */
+    border-bottom: 3px solid white; /* Ciemniejsze obramowanie na dole */
+    border-left: 3px solid white; /* Ciemniejsze obramowanie po lewej */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    cursor: pointer; /* Kursor zmienia się na wskazujący */
+    font-size: 16px; /* Rozmiar tekstu */
+    transition: background-color 0.3s ease; /* Płynne przejście koloru tła */
+}
+
+#nav-toggle:hover {
+    background-color: #45a049; /* Ciemniejszy zielony po najechaniu */
+}
+
+#nav-toggle:active {
+    background-color: #3e8e41; /* Jeszcze ciemniejszy zielony po kliknięciu */
+    transform: translateY(2px); /* Przesunięcie w dół po kliknięciu */
+}
+
 /* Stylizacja tabeli */
 table {
     width: 100%;
