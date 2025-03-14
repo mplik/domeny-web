@@ -57,6 +57,25 @@ table {
     margin: 20px 0;
 }
 
+button {
+    background-color: #4caf50; /* stylizacja przycisku zielony*/
+    border: solid 2px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0,3s ease; 
+}
+
+button:hover {
+    background-color: #45a049; /* ciemnniejszy zielony*/
+}
+
 table th, table td {
     border: 1px solid #ddd;
     padding: 8px;
