@@ -73,6 +73,10 @@ header nav ul li a:hover {
     transform: translateY(2px); /* Przesunięcie w dół po kliknięciu */
 }
 
+main {
+    margin-bottom: 50px; /* Zapobiega zakryciu treści przez pasek informacyjny */
+}
+
 /* Stylizacja tabeli */
 table {
     width: 100%;
@@ -123,6 +127,11 @@ table th:hover {
 
 table tr:hover {
     background-color: #e0e0e0; /* Kolor tła wiersza po najechaniu */
+}
+
+td.date {
+    font-size: 12px; /* Stylizacja daty */
+    color: #666;
 }
 
 /* Responsywne obrazy */
