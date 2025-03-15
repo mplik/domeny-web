@@ -74,7 +74,7 @@ header nav ul li a:hover {
 }
 
 main {
-    margin-bottom: 50px; /* Zapobiega zakryciu treści przez pasek informacyjny */
+    margin-bottom: 60px; /* Zapobiega zakryciu treści przez pasek informacyjny */
 }
 
 /* Stylizacja tabeli */
@@ -130,7 +130,7 @@ table tr:hover {
 }
 
 td.date {
-    font-size: 12px; /* Stylizacja daty w tabeli */
+    font-size: 10px; /* Stylizacja daty w tabeli */
     color: #666;
 }
 
