@@ -97,6 +97,12 @@ button {
 
 button:hover {
     background-color: #45a049; /* ciemnniejszy zielony*/
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); /* cień po najechaniu*/
+}
+
+button:focus {
+    outline: 0; /* usuwanie obramowania po kliknięciu*/
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* obramowanie po kliknięciu*/
 }
 
 table th, table td {
