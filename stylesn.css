@@ -130,7 +130,7 @@ table tr:hover {
 }
 
 td.date {
-    font-size: 12px; /* Stylizacja daty */
+    font-size: 12px; /* Stylizacja daty w tabeli */
     color: #666;
 }
 
