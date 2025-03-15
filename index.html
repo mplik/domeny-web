@@ -272,8 +272,10 @@
 
     dateCells.forEach(cell => {
       const dateText = cell.textContent;
-      const formattedDate = dayjs(dateText, 'YY-MM-DD').format('DD-MM-YY');
-      cell.textContent = formattedDate;
+      if (dayjs(dateText, 'YY-MM-DD', true).isValid()) {
+        const formattedDate = dayjs(dateText, 'YY-MM-DD').format('DD-MM-YY');
+        cell.textContent = formattedDate;
+      }
     });
   });
 </script>
