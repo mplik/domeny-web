@@ -205,7 +205,7 @@ img {
 .marquee p {
     display: inline-block; /* Stylizacja dla paska informacyjnego */
     padding-left: 100%; /* Stylizacja dla paska informacyjnego */
-    animation: marquee 80s linear infinite; /* Stylizacja dla paska informacyjnego */
+    animation: marquee 160s linear infinite; /* Stylizacja dla paska informacyjnego */
 }
 
 @keyframes marquee {
