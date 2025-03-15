@@ -208,6 +208,7 @@ img {
     animation: marquee 160s linear infinite; /* Stylizacja dla paska informacyjnego */
 }
 
+
 @keyframes marquee {
     0% {
         transform: translate(0, 0);
