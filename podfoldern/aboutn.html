@@ -35,7 +35,10 @@
         <meta name="twitter:data1" content="Nasza misja, historia, zespół i dlaczego my." />
 
         <!-- Google tag (gtag.js) --> 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2ME420X4D"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-X2ME420X4D'); </script> 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2ME420X4D"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-X2ME420X4D'); </script>
+        
+        <!--dodaje script Stripe-->
+        <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
     </head>
     <body>
         <header>
@@ -56,6 +59,13 @@
                Aby być na bieżąco z najnowszymi trendami i ekskluzywnymi poradami, zapisz się na nasz płatny
                <a href="https://buy.stripe.com/6oE7vN3Blgy9azKbIT"><em>newsletter</em></a>, który dostarczy Ci wartościowe informacje oraz inspiracje prosto od naszych specjalistów. 
             </p>
+
+            <!--miejsce na tabele cenową-->
+            <div id="pricing-table">
+<stripe-pricing-table pricing-table-id="prctbl_1R1RrqIMvKBMrhlEzUy07lEd"
+publishable-key="pk_live_51Ne3NEIMvKBMrhlEjYDipe2Y6fMD63oXUUQ9WKwshadTTQqXRUtlhB0h99PRzRkPazovy88VPDdYIDNyZob42Hct00YGrc3fxe">
+</stripe-pricing-table>
+            </div>
             <h2 class="team">Nasz Zespół</h2>
             <div class="team-member">
                 <a href="rafal_emme_seo.html" target="_blank" rel="noopener noreferrer">
