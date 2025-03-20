@@ -3,6 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 header {
@@ -82,5 +83,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    margin: 0; /* Ensure no margin */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
