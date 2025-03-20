@@ -19,7 +19,7 @@ h1 {
 
 .header .logo {
     max-width: 50px; /* Maksymalna szerokość logo */
-    margin-right: 20px; /* Odstęp między logo a tytułem */
+    margin-right: 10px; /* Odstęp między logo a tytułem */
 }
 
 p {
