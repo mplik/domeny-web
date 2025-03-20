@@ -15,6 +15,7 @@ body {
 
 #colier {
     font-weight: bold;
+    font-style: normal;
 }
 
 #tekst {
@@ -22,6 +23,7 @@ body {
     background-color: #e9ecef;
     padding: 5px;
     border-radius: 5px;
+    font-style: normal;
 }
 
 .strona_wsparcia .cytat {
@@ -35,6 +37,7 @@ body {
 .strona_wsparcia
 #colier1 {
     font-weight: bold;
+    font-style: normal;
 }
 
 .strona_wsparcia
@@ -43,6 +46,7 @@ body {
     background-color: #e9ecef;
     padding: 5px;
     border-radius: 5px;
+    font-style: normal;
 }
 
 p {
