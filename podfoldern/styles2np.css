@@ -22,13 +22,10 @@ h1 {
     margin-right: 20px; /* Odstęp między logo a tytułem */
 }
 
-.header-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Wyśrodkowanie tekstu nagłówka */
-    text-align: center; /* Wyśrodkowanie tekstu nagłówka */
-    color: #333; /* Kolor tekstu nagłówka */
+p {
+    text-align: center;
 }
+
 
 form {
     background: #fff;
