@@ -25,7 +25,7 @@
     <p>Podaj nazwę swojej domeny, którą chcesz wystawić na naszej giełdzie,</p>
     <p>a ktoś z zespołu mplik.pl skontaktuje się z Tobą, aby udzielić Ci bardziej szczegółowych informacji.</p>
     <p>Dziękuję.</p>
-    <form id="contactForm" action="https://formspree.io/f/movqwwyb" method="POST"> /* Zmiana akcji formularza na Formspree */
+    <form action="https://formspree.io/f/movqwwyb" method="POST"> <!-- Użycie Formspree do obsługi formularza -->
     <label for="name">Imię:</label>
     <input type="text" id="name" name="name" required>
     <br>
@@ -50,28 +50,13 @@
     udzielania odpowiedzi na Twoje zapytania.</p>
 </div>
 <script>
-    document.querySelector("#contactForm").onsubmit = function(event) {
-        event.preventDefault(); // Zapobiega domyślnej akcji przeglądarki (wysłanie formularza)
+    document.querySelector("form").onsubmit = function() {
         alert("Dziękujemy za przesłanie formularza! Odpowiemy wkrótce.");
-        
-        // Ręczne wysłanie formularza przez JavaScript
-        fetch(this.action, {
-            method: this.method,
-            body: new FormData(this),
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-            if (response.ok) {
-                console.log("Formularz został wysłany.");
-                this.reset(); // Resetuje formularz po pomyślnym wysłaniu
-            } else {
-                console.error("Wystąpił problem podczas wysyłania formularza.");
-            }
-        }).catch(error => {
-            console.error("Wystąpił problem podczas wysyłania formularza:", error);
-        });
     };
 </script>
+    <div class="footer">
+        <p>&copy; 2024 mplik.pl. Wszelkie prawa zastrzeżone.</p>
+        <p>Wszelkie znaki towarowe i prawa autorskie są własnością ich właścicieli.</p>
+    </div>
 </body>
 </html>
