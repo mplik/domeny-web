@@ -53,7 +53,7 @@
     document.querySelector("#contactForm").onsubmit = function(event) {
         event.preventDefault(); // Zapobiega domyślnej akcji przeglądarki (wysłanie formularza)
         alert("Dziękujemy za przesłanie formularza! Odpowiemy wkrótce.");
-        this.reset(); // Resetuje formularz
+        
         // Ręczne wysłanie formularza przez JavaScript
         fetch(this.action, {
             method: this.method,
@@ -64,6 +64,7 @@
         }).then(response => {
             if (response.ok) {
                 console.log("Formularz został wysłany.");
+                this.reset(); // Resetuje formularz po pomyślnym wysłaniu
             } else {
                 console.error("Wystąpił problem podczas wysyłania formularza.");
             }
