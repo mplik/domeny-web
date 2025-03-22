@@ -109,6 +109,11 @@ a {
    
 }
 
+.container {
+    padding: 20px;
+    margin-bottom: 4rem;
+}
+
 #pricing-table {
     width: 100vw;
     margin-left: calc(50% - 50vw); /* Center the table */
