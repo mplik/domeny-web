@@ -87,3 +87,12 @@ footer {
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
+#pricing-table {
+    width: 100vw;
+    margin-left: calc(50% - 50vw); /* Center the table */
+    padding: 20px 0; /* Add padding to the top and bottom */
+    background-color: #007bff; /* Light background for the table */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
