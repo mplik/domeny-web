@@ -87,6 +87,16 @@ footer {
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
+footer a {
+    color: aqua; /* Change the link color to aqua */
+    text-decoration: none; /* Usuwa podkreślenie linku*/
+    transition: text-decoration 0.3s ease; /* Smooth transition for hover effect */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Dodaje podkreślenie linku po najechaniu */
+}
+
 #pricing-table {
     width: 100vw;
     margin-left: calc(50% - 50vw); /* Center the table */
