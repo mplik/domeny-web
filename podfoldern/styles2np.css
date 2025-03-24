@@ -38,6 +38,12 @@ form {
     margin: 0 auto;
 }
 
+form:hover {
+    transform: scale(1.02); /* Powiększenie formularza po najechaniu */
+    transition: transform 0.3s ease; /* Płynne przejście powiększenia */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Zmiana cienia po najechaniu */
+}
+
 label {
     display: block;
     margin-bottom: 5px;
