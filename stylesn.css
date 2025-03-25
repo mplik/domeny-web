@@ -217,3 +217,29 @@ img {
         transform: translate(-100%, 0);
     }
 }
+
+.pagination { /* Stylizacja dla paginacji */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.nav-arrow { /* Stylizacja dla strzałek nawigacyjnych */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-arrow:hover { /* Stylizacja dla strzałek nawigacyjnych po najechaniu */
+    background-color: #0056b3;
+}
+.nav-arrow:disabled { /* Stylizacja dla nieaktywnych strzałek nawigacyjnych */
+    background-color: #ccc;
+    cursor: not-allowed;
+}
