@@ -27,6 +27,8 @@
     
     <!-- Google tag (gtag.js) --> 
      <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2ME420X4D"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-X2ME420X4D'); </script> <!-- Google tag (gtag.js) -->
+
+     <script async src="https://js.stripe.com/v3/pricing-table.js"></script> <!--dodanie Stripe.js-->
   </head>
   <body>
     <header>
@@ -196,6 +198,12 @@
           </tbody>
         </table>
         <canvas id="popularity-chart" width="400" height="200"></canvas> <!--wykres popularności domen-->
+
+        <div id="pricing-table">
+          <stripe-pricing-table pricing-table-id="prctbl_1R6pJzIMvKBMrhlEkDp11V6S"
+          publishable-key="pk_live_51Ne3NEIMvKBMrhlEjYDipe2Y6fMD63oXUUQ9WKwshadTTQqXRUtlhB0h99PRzRkPazovy88VPDdYIDNyZob42Hct00YGrc3fxe">
+          </stripe-pricing-table> <!--dodanie tabeli cenowej Stripe-->
+                  </div>
         <button onclick="updateChartData()">Aktualizuj wykres</button> <!--przycisk aktualizacji wykresu-->
       </section>
       <section class="info-cards">
