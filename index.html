@@ -197,6 +197,13 @@
             <!-- Zawartość tabeli -->
           </tbody>
         </table>
+
+         <!-- Strzałki nawigacyjne -->
+  <div class="pagination">
+    <button class="nav-arrow" onclick="navigateToPage('previous')">&larr; Poprzednia</button>
+    <button class="nav-arrow" onclick="navigateToPage('next')">Następna &rarr;</button>
+  </div>
+
         <canvas id="popularity-chart" width="400" height="200"></canvas> <!--wykres popularności domen-->
         <button onclick="updateChartData()">Aktualizuj wykres</button> <!--przycisk aktualizacji wykresu-->
 
@@ -264,6 +271,18 @@
       popularityChart.update(); //aktualizacja wykresu
     }
     </script>
+
+<script>
+  function navigateToPage(direction) {
+    if (direction === 'previous') {
+      // Przekierowanie do poprzedniej strony tabeli
+      window.location.href = 'index.html'; // Zmień na właściwy adres URL
+    } else if (direction === 'next') {
+      // Przekierowanie do następnej strony tabeli
+      window.location.href = 'next-page.html'; // Zmień na właściwy adres URL
+    }
+  }
+</script>
     
     <script>
       if ('serviceWorker' in navigator) { //rejestracja serwisu

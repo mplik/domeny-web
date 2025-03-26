@@ -218,6 +218,7 @@ img {
     }
 }
 
+
 #pricing-table {
     width: 100vw;
     margin-left: calc(50% - 50vw); /* Center the table */
@@ -225,4 +226,30 @@ img {
     background-color: #5bcd3d; /* Light background for the table */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.pagination { /* Stylizacja dla paginacji */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.nav-arrow { /* Stylizacja dla strzałek nawigacyjnych */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-arrow:hover { /* Stylizacja dla strzałek nawigacyjnych po najechaniu */
+    background-color: #0056b3;
+}
+.nav-arrow:disabled { /* Stylizacja dla nieaktywnych strzałek nawigacyjnych */
+    background-color: #ccc;
+    cursor: not-allowed;
 }
