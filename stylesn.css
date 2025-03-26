@@ -247,7 +247,8 @@ img {
 
 #pricing-table {
     width: 100vw;
-    margin-left: calc(50% - 50vw); /* Center the table */
+    margin-left: calc(50% - 50vw); /* Centruje tabelę w poziomie */
+    margin-top: 20px; /* Odstęp od góry */
     padding: 20px 0; /* Add padding to the top and bottom */
     background-color: #5bcd3d; /* Light background for the table */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
