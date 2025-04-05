@@ -12,8 +12,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    background-image: url('podfoldern/background/img-background.jpg'); /* Ścieżka do obrazu */
+    background-size: cover; /* Dopasowanie obrazu do całego nagłówka */
+    background-position: center; /* Wyśrodkowanie obrazu */
+    color: white; /* Kolor tekstu */
+    height: 200px; /* Ustaw wysokość nagłówka */
 }
 
 
@@ -193,6 +196,7 @@ img {
     color: #ffff00;
     white-space: nowrap;
     overflow: hidden;
+    z-index: 10; /* Ustawienie warstwy powyżej innych elementów */
 }
 
 .highlight {
@@ -254,4 +258,29 @@ img {
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 
+}
+
+footer {
+    background-image: url('podfoldern/background/img-background.jpg'); /* Tło obraz */
+    background-size: cover; /* Dopasowanie obrazu */
+    background-position: center; /* Wyśrodkowanie obrazu */
+    color: #fff; /* Kolor tekstu */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    padding: 20px; /* Odstępy wewnętrzne */
+    position: relative; /* Pozycjonowanie w normalnym przepływie */
+    bottom: 0;
+    width: 100%; /* Szerokość stopki */
+    margin: 0; /* Brak marginesów */
+    box-sizing: border-box; /* Uwzględnienie paddingu i borderu */
+    z-index: 1; /* Ustawienie warstwy poniżej paska .marquee */
+}
+
+footer a {
+    color: aqua; /* Kolor linków */
+    text-decoration: none; /* Usuń podkreślenie */
+    transition: text-decoration 0.3s ease; /* Płynne przejście dla efektu hover */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Podkreślenie linków po najechaniu */
 }
