@@ -1,0 +1,23 @@
+footer {
+    background-image: url('background/img-background.jpg'); /* Add the background image */
+    background-size: cover; /* Make sure the image covers the entire header */
+    background-position: center; /* Center the image */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: 0; /* Ensure no margin */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+footer a {
+    color: aqua; /* Change the link color to aqua */
+    text-decoration: none; /* Usuwa podkreślenie linku*/
+    transition: text-decoration 0.3s ease; /* Smooth transition for hover effect */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Dodaje podkreślenie linku po najechaniu */
+}
