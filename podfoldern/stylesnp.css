@@ -55,16 +55,19 @@ p {
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
+    padding: 10px 20px; 
+    margin-top: 20px; /*dodaje margines górny 20px*/
+    margin-right: 20px; /*dodaje margines prawy 20px*/
+    margin-left: 20px; /*dodaje margines lewy 20px*/
     background-color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 5px; /*dodaje zaokrąglenie rogów*/
     font-size: 16px;
     border: 1px solid black; /*dodaje czarny obramowanie*/
     border-bottom: 3px solid #0056b3; /*dodaje dolne obramowanie o grubości 3px i kolorze #0056b3*/
     border-left: 3px solid #0056b3; /*dodaje lewe obramowanie o grubości 3px i kolorze #0056b3*/
     padding: 10px 20px; /*dodaje padding wewnętrzny 10px na górze i dole, 20px po bokach*/
+    margin-bottom: 20px;
     
 }
 
@@ -98,19 +101,19 @@ a {
 }
 
 .logo {
-    max-width: 25%;
+    max-width: 25%; /*maksymalna szerokość 25%*/
     height: auto;
     border: none;
 }
 
-.button:active {
+.button:active { /*dodaje efekt kliknięcia*/
     background-color: #0056b3;
     transform: translate(2px); /*przesunięcie o 2px*/
    
 }
 
 .container {
-    padding: 20px;
+    padding: 20px; /* Padding around the container */
     margin-bottom: 4rem;
 }
 
