@@ -346,5 +346,18 @@
   <a href="https://www.linkedin.com/in/rafa%C5%82-emme-mplik?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
   <p><a href="../index.html">Powrót do strony głównej</a></p>
 </footer>
+
+  <!-- Dodanie skryptu do przewijania strony -->
+<script>
+  document.addEventListener("scroll", function () {
+    const container = document.querySelector(".paypal-container");
+  
+    if (window.scrollY > 100) {
+      container.classList.add("show");
+    } else {
+      container.classList.remove("show");
+    }
+  });
+  </script>
   </body>
 </html>
