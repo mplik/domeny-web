@@ -224,6 +224,7 @@
 
         <!-- Dodanie przycisku PayPal do zakupu domeny -->
          <div class="paypal-container">
+          <button class="close-button">&times;</button> <!-- Przycisk zamknięcia -->
           <p>Zapłać szybko i bezpiecznie za swoją domenę z wyprzedaży za pomocą PayPal:</p>
         <script src="https://www.paypal.com/sdk/js?client-id=BAAE33Ly_VtdkPxhXfr_NE7LYvzZERLpK6GQvYCzhuNwC74NdYlYbDavOuD1nbkyzPkCTNuAz6bwaqfCoA&components=hosted-buttons&disable-funding=venmo&currency=PLN"></script>
         <div id="paypal-container-W9H4HB7DZ5E86"></div>
@@ -348,16 +349,23 @@
 </footer>
 
   <!-- Dodanie skryptu do przewijania strony -->
-<script>
-  document.addEventListener("scroll", function () {
-    const container = document.querySelector(".paypal-container");
+  <script>
+    // Obsługa zamykania kontenera PayPal
+    document.querySelector(".close-button").addEventListener("click", function () {
+      const container = document.querySelector(".paypal-container");
+      container.style.display = "none"; // Ukrycie kontenera
+    });
   
-    if (window.scrollY > 100) {
-      container.classList.add("show");
-    } else {
-      container.classList.remove("show");
-    }
-  });
+    // Obsługa animacji podczas scrollowania
+    document.addEventListener("scroll", function () {
+      const container = document.querySelector(".paypal-container");
+  
+      if (window.scrollY > 100) {
+        container.classList.add("show");
+      } else {
+        container.classList.remove("show");
+      }
+    });
   </script>
   </body>
 </html>
