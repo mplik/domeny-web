@@ -137,6 +137,13 @@ td.date {
     color: #666;
 }
 
+/* Stylizacja dla przycisku "Kup teraz" paypal */
+.paypal-container {
+    margin-top: 20px; /* Odstęp od góry */
+    margin-bottom: 20px; /* Odstęp od dołu */
+    margin-left: 30px; /* Odstęp od lewej */
+}
+
 /* Responsywne obrazy */
 img {
     max-width: 50%;
