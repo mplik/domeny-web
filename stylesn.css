@@ -154,6 +154,27 @@ td.date {
     transition: left 0.5s ease-in-out; /* Płynne przejście dla animacji */
 }
 
+.close-button {
+    position: absolute; /* Pozycjonowanie przycisku zamykania */
+    top: 10px; /* Odstęp od góry */
+    right: 10px; /* Odstęp od prawej krawędzi */
+    background-color: #f44336; /* Przezroczyste tło */
+    color: white; /* Biały tekst */
+    border: none; /* Brak obramowania */
+    border-radius: 5px; /* Okrągły kształt */
+    font-size: 20px; /* Rozmiar tekstu */
+    width: 30px; /* Szerokość przycisku */
+    height: 30px; /* Wysokość przycisku */
+    cursor: pointer; /* Kursor wskazujący */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    line-height: 30px; /* Wysokość linii dla wyśrodkowania tekstu */
+    transition: background-color 0.3s ease; /* Płynne przejście koloru tła */
+}
+
+.close-button:hover {
+    background-color: #d32f2f; /* Ciemniejszy kolor po najechaniu */
+}
+
 .paypal-container.show {
     left: 20px; /* Ustawienie na ekranie */
 }
