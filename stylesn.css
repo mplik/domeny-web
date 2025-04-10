@@ -147,6 +147,15 @@ td.date {
     border-radius: 10px; /* Zaokrąglone rogi */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Delikatny cień */
     text-align: center; /* Wyśrodkowanie tekstu */
+    position: fixed; /* Pozycjonowanie kontenera */
+    top: 50%; /* Ustawienie na środku ekranu */
+    left: -300px; /* Ustawienie poza ekranem */
+    transform: translateY(-50%); /* Wyśrodkowanie w pionie */
+    transition: left 0.5s ease-in-out; /* Płynne przejście dla animacji */
+}
+
+.paypal-container.show {
+    left: 20px; /* Ustawienie na ekranie */
 }
 
 .paypal-container p {
