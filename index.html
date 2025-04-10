@@ -222,6 +222,18 @@
           </tbody>
         </table>
 
+        <!-- Dodanie przycisku PayPal do zakupu domeny -->
+         <div class="paypal-container">
+          <p>Zapłać szybko i bezpiecznie za swoją domenę z wyprzedaży za pomocą PayPal:</p>
+        <script src="https://www.paypal.com/sdk/js?client-id=BAAE33Ly_VtdkPxhXfr_NE7LYvzZERLpK6GQvYCzhuNwC74NdYlYbDavOuD1nbkyzPkCTNuAz6bwaqfCoA&components=hosted-buttons&disable-funding=venmo&currency=PLN"></script>
+        <div id="paypal-container-W9H4HB7DZ5E86"></div>
+        <script>
+          paypal.HostedButtons({
+            hostedButtonId: "W9H4HB7DZ5E86",
+          }).render("#paypal-container-W9H4HB7DZ5E86")
+        </script>
+         </div>
+
          <!-- Strzałki nawigacyjne -->
   <div class="pagination">
     <button class="nav-arrow" onclick="navigateToPage('previous')">&larr; Poprzednia</button>
