@@ -139,9 +139,36 @@ td.date {
 
 /* Stylizacja dla przycisku "Kup teraz" paypal */
 .paypal-container {
-    margin-top: 20px; /* Odstęp od góry */
-    margin-bottom: 20px; /* Odstęp od dołu */
-    margin-left: 30px; /* Odstęp od lewej */
+    margin: 20px auto; /* Wyśrodkowanie kontenera */
+    padding: 20px; /* Dodanie odstępów wewnętrznych */
+    max-width: 600px; /* Maksymalna szerokość kontenera */
+    background-color: #f9f9f9; /* Jasne tło dla kontrastu */
+    border: 1px solid #ddd; /* Subtelne obramowanie */
+    border-radius: 10px; /* Zaokrąglone rogi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Delikatny cień */
+    text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+.paypal-container p {
+    font-size: 16px; /* Rozmiar tekstu */
+    color: #333; /* Kolor tekstu */
+    margin-bottom: 15px; /* Odstęp od przycisku */
+    line-height: 1.5; /* Wysokość linii dla lepszej czytelności */
+}
+
+#paypal-container-W9H4HB7DZ5E86 {
+    margin-top: 10px; /* Odstęp od tekstu */
+}
+
+@media (max-width: 767px) {
+    .paypal-container {
+        padding: 15px; /* Zmniejszenie paddingu na małych ekranach */
+        max-width: 90%; /* Zmniejszenie szerokości kontenera */
+    }
+
+    .paypal-container p {
+        font-size: 14px; /* Zmniejszenie rozmiaru tekstu */
+    }
 }
 
 /* Responsywne obrazy */
