@@ -186,6 +186,14 @@ td.date {
     line-height: 1.5; /* Wysokość linii dla lepszej czytelności */
 }
 
+.highlight-paypal {
+    color: lightblue; /* Kolor tekstu */
+    font-weight: bold; /* Pogrubienie tekstu */
+    background-color: #f0f8ff; /* Opcjonalne tło */
+    padding: 2px 4px; /* Opcjonalne odstępy */
+    border-radius: 4px; /* Opcjonalne zaokrąglenie */
+}
+
 #paypal-container-W9H4HB7DZ5E86 {
     margin-top: 10px; /* Odstęp od tekstu */
 }
