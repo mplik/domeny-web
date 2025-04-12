@@ -40,6 +40,18 @@ function toggleImage() {
     }
 }
 
+// Obsługa kliknięcia obrazu
+if (image) {
+    image.addEventListener("click", function () {
+        const link = document.createElement("a");
+        link.href = "cert/Rafa_Emme_Full_Stack_Development.pdf"; // Ścieżka do pliku PDF
+        link.download = "certyfikat.pdf"; // Nazwa pliku do pobrania
+        document.body.appendChild(link); // Tymczasowo dodaj link do DOM
+        link.click(); // Symuluj kliknięcie
+        document.body.removeChild(link); // Usuń link po pobraniu
+    });
+}
+
 // Dodaje przyciski do obsługi wyświetlania i zamykania zdjęcia
 document.addEventListener("DOMContentLoaded", function() {
     const button = document.getElementById("cert-button"); // Przycisk do wyświetlania certyfikatu
