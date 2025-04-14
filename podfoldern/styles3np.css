@@ -106,7 +106,7 @@ footer a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
-#faturownia-link {
+.faturownia-link {
     text-align: center;
     margin: 20px 0; /* Add margin for spacing */
     padding: 10px; /* Add padding for better spacing */
@@ -116,14 +116,14 @@ footer a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
-#fakturownia-link img {
+.fakturownia-link img {
     max-width: 100%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px; /* Rounded corners */
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
-#fakturownia-link:hover img {
+.fakturownia-link:hover img {
     transform: scale(1.05); /* Slightly enlarge the image on hover */
 }
 
