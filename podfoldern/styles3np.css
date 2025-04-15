@@ -107,6 +107,30 @@ footer a:hover {
 }
 
 .fakturownia-link {
-    margin-left: 20px; /* Add left margin to the link */
+    text-align: center; /* Center the link */
+    margin: 20px auto; /* Add left margin to the link */
+    padding: 15px 30px; /* Add padding to the link */
+    background-color: #007bff; /* Button color */
+    border: 1px solid #007bff; /* Button border color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    max-width: 400px; /* Set a maximum width for the button */
+}
+
+.fakturownia-link img {
+    max-width: 100%; /* Ensure the image fits within the button */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block; /* Ensure the image is a block element */
+    border-radius: 4px; /* Rounded corners for the image */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.fakturownia-link:hover img {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+.fakturownia-link:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    border-color: #0056b3; /* Darker border on hover */
 }
 
