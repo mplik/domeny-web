@@ -134,3 +134,61 @@ footer a:hover {
     border-color: #0056b3; /* Darker border on hover */
 }
 
+.promotion {
+    margin: 20px 0; /* Odstęp od innych sekcji */
+    padding: 15px; /* Wewnętrzne odstępy */
+    background-color: #f9f9f9; /* Jasne tło dla sekcji */
+    border: 1px solid #ddd; /* Ramka wokół sekcji */
+    border-radius: 8px; /* Zaokrąglone rogi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+}
+
+.promotion h4 {
+    font-size: 1.2rem; /* Rozmiar nagłówka */
+    color: #333; /* Kolor tekstu */
+    margin-bottom: 10px; /* Odstęp pod nagłówkiem */
+}
+
+.promotion p {
+    font-size: 1rem; /* Rozmiar tekstu */
+    color: #555; /* Kolor tekstu */
+    margin-bottom: 10px; /* Odstęp pod tekstem */
+}
+
+.promotion textarea {
+    width: 100%; /* Dopasowanie szerokości do kontenera */
+    height: 120px; /* Wysokość pola tekstowego */
+    padding: 10px; /* Wewnętrzne odstępy */
+    border: 1px solid #ddd; /* Ramka */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    background-color: #fff; /* Kolor tła */
+    font-family: monospace; /* Czcionka dla kodu */
+    font-size: 0.9rem; /* Rozmiar tekstu */
+    color: #333; /* Kolor tekstu */
+    white-space: pre-wrap; /* Zawijanie tekstu */
+    word-wrap: break-word; /* Łamanie długich słów */
+    overflow-wrap: break-word; /* Dodatkowe łamanie tekstu */
+    resize: none; /* Wyłączenie możliwości zmiany rozmiaru */
+}
+
+details {
+    margin: 20px 0; /* Odstęp od innych sekcji */
+    padding: 15px; /* Wewnętrzne odstępy */
+    border: 1px solid #ddd; /* Ramka wokół sekcji */
+    border-radius: 8px; /* Zaokrąglone rogi */
+    background-color: #f9f9f9; /* Jasne tło dla sekcji */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+}
+
+details summary {
+    font-size: 1.2rem; /* Rozmiar nagłówka */
+    font-weight: bold; /* Pogrubienie tekstu nagłówka */
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+    margin-bottom: 10px; /* Odstęp pod nagłówkiem */
+    color: #333; /* Kolor tekstu nagłówka */
+}
+
+details[open] {
+    background-color: #eef; /* Inny kolor tła po rozwinięciu */
+}
+
