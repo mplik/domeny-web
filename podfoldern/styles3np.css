@@ -101,7 +101,7 @@ footer a:hover {
     width: 100vw;
     margin-left: calc(50% - 50vw); /* Center the table */
     padding: 20px 0; /* Add padding to the top and bottom */
-    background-color: #007bff; /* Light background for the table */
+    background-color: #fff; /* Light background for the table */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
@@ -110,8 +110,8 @@ footer a:hover {
     text-align: center; /* Center the link */
     margin: 20px auto; /* Add left margin to the link */
     padding: 15px 30px; /* Add padding to the link */
-    background-color: #007bff; /* Button color */
-    border: 1px solid #007bff; /* Button border color */
+    background-color: #fff; /* Button color */
+    border: 1px solid #fff; /* Button border color */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
     max-width: 400px; /* Set a maximum width for the button */
@@ -130,8 +130,8 @@ footer a:hover {
 }
 
 .fakturownia-link:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-    border-color: #0056b3; /* Darker border on hover */
+    background-color: #fff; /* Darker shade on hover */
+    border-color: #fff; /* Darker border on hover */
 }
 
 .promotion {
