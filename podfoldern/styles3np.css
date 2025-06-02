@@ -192,3 +192,37 @@ details[open] {
     background-color: #eef; /* Inny kolor tła po rozwinięciu */
 }
 
+#donate {
+    text-align: center; /* Wyśrodkowanie tekstu */
+    margin: 20px 0; /* Odstęp od innych sekcji */
+    padding: 15px; /* Wewnętrzne odstępy */
+    background-color: #f0f8ff; /* Jasne tło dla sekcji */
+    border: 2px solid #0070ba; /* Ramka wokół sekcji */
+    border-radius: 8px; /* Zaokrąglone rogi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+    max-width: 600px; /* Maksymalna szerokość sekcji */
+}
+
+#donate h3 {
+    font-size: 1.5rem; /* Rozmiar nagłówka */
+    color: #0070ba; /* Kolor tekstu nagłówka */
+    margin-bottom: 10px; /* Odstęp pod nagłówkiem */
+}
+
+#donate p {
+    font-size: 1rem; /* Rozmiar tekstu */
+    color: #555; /* Kolor tekstu */
+    margin-bottom: 15px; /* Odstęp pod tekstem */
+}
+
+#donate input[type="image"] {
+    border: none; /* Usunięcie obramowania */
+    margin-top: 10px; /* Odstęp od tekstu */
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+    transition: transform 0.3s ease; /* Płynne przejście przy najechaniu */
+}
+
+#donate input[type="image"]:hover {
+    transform: scale(1.05); /* Powiększenie przy najechaniu */
+}
+
