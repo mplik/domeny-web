@@ -58,6 +58,13 @@ Otwórz plik `index.html` w przeglądarce, aby przejść do używania.
 - CSS: 21.8%
 - JavaScript: 2.8%
 
+## Wesprzyj nasz projekt
+
+Jeśli podoba Ci się ten projekt i chciałbyś nas wesprzeć, możesz przekazać darowiznę za pomocą PayPal:
+
+[![Darowizna PayPal][def]](https://www.paypal.com/donate?hosted_button_id=9MYZA8H98LSM4)
+
+
 ## Licencja
 Ten projekt jest dostępny na licencji MIT.
 
