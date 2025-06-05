@@ -1,3 +1,5 @@
+<!-- GitAds-Verify: 7W64F3EM1R4JV3ELGL2LOXMHYC4ZFOSG -->
+
 # Domeny-Web Giełda Domen MPLIK.PL
 
 ## Opis
