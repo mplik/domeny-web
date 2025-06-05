@@ -63,13 +63,13 @@ Otwórz plik `index.html` w przeglądarce, aby przejść do używania.
 Jeśli podoba Ci się ten projekt i chciałbyś nas wesprzeć, możesz przekazać darowiznę za pomocą PayPal:
 
 
-[![Darowizna PayPal][paypal-btn]][def3]
+[![Przekaż darowiznę PayPal](https://www.paypalobjects.com/pl_PL/PL/i/btn/btn_donate_SM.gif)](https://www.paypal.com/donate?hosted_button_id=9MYZA8H98LSM4)
 
 ## Licencja
 Ten projekt jest dostępny na licencji MIT.
 
 [def2]: https://youtube.com/watch?v=CfpvZGFXpLo&si=28nt9k5sC_ELiEV2
-[paypal-btn]: https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif
+
 [watchYouTubeShort]: https://youtube.com/shorts/lLUIFieyUPs?si=g5q1jRpHASltx2Q5
 [zobacz zrzut ekranu]: https://github.com/mplik/domeny-web/blob/main/zasoby/zrzut_ekranu-gie%C5%82da_domen_plik.readme.md.png?raw=true
 
