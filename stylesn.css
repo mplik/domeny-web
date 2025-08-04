@@ -1,3 +1,89 @@
+/* Sekcja Ostatnio sprzedane domeny */
+.recently-sold-section {
+  background: linear-gradient(120deg, #f8fafc 60%, #e0e7ff 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(60, 60, 120, 0.08);
+  padding: 32px 24px 24px 24px;
+  margin: 32px auto 24px auto;
+  max-width: 540px;
+  position: relative;
+  overflow: hidden;
+}
+.recently-sold-section h3 {
+  font-size: 1.7rem;
+  color: #2d3a4a;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.recently-sold-section h3::before {
+  content: '\1F4B0'; /* emoji money bag */
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+.recently-sold-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.recently-sold-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  padding: 14px 18px;
+  box-shadow: 0 2px 8px rgba(60, 60, 120, 0.06);
+  transition: transform 0.15s, box-shadow 0.15s;
+  position: relative;
+}
+.recently-sold-list li:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(60, 60, 120, 0.13);
+  background: #f0f7ff;
+}
+.domain-name {
+  font-weight: 600;
+  color: #3b3b6d;
+  font-size: 1.1em;
+  letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+}
+.domain-name::before {
+  content: '\1F310'; /* emoji globe */
+  margin-right: 7px;
+  font-size: 1.1em;
+}
+.sold-date {
+  color: #6b7280;
+  font-size: 0.98em;
+  margin: 0 10px;
+}
+.sold-price {
+  color: #0e7c3a;
+  font-weight: 700;
+  font-size: 1.08em;
+  background: #e6fbe9;
+  border-radius: 6px;
+  padding: 3px 10px;
+  box-shadow: 0 1px 3px rgba(14,124,58,0.07);
+}
+@media (max-width: 600px) {
+  .recently-sold-section {
+    padding: 18px 6px 12px 6px;
+    max-width: 98vw;
+  }
+  .recently-sold-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 10px 8px;
+  }
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
