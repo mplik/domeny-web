@@ -81,7 +81,7 @@ fetch('domains-for-sale.json')
         <td data-label="Cena">${item.price}</td>
         <td data-label="Opis">${item.description}</td>
         <td data-label="Dodano">${item.added}</td>
-        <td data-label="Akcja"><a href="https://buy.stripe.com/8wM17pefZ0zb23eeV2" class="buy-btn" target="_blank" rel="noopener">Kup</a></td>
+        <td data-label="Akcja"><a href="${item.buyUrl}" class="buy-btn" target="_blank" rel="noopener">Kup</a></td>
       `;
       table.appendChild(row);
     });
