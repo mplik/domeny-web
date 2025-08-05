@@ -1,3 +1,30 @@
+@media (max-width: 600px) {
+  .for-sale-section {
+    padding: 10px 2px;
+  }
+  .domains-table, .domains-table thead, .domains-table tbody, .domains-table th, .domains-table td, .domains-table tr {
+    display: block;
+    width: 100%;
+  }
+  .domains-table thead tr {
+    display: none;
+  }
+  .domains-table tr {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  .domains-table td {
+    padding: 8px 4px;
+    text-align: right;
+    position: relative;
+  }
+  .domains-table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    color: #2d72d9;
+  }
+}
 /* Style dla sekcji dynamicznej tabeli domen */
 .for-sale-section {
   margin: 40px auto;
