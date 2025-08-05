@@ -77,11 +77,11 @@ fetch('domains-for-sale.json')
     data.forEach(item => {
       const row = document.createElement('tr');
       row.innerHTML = `
-        <td>${item.domain}</td>
-        <td>${item.price}</td>
-        <td>${item.description}</td>
-        <td>${item.added}</td>
-        <td><a href="${item.buyUrl}" class="buy-btn">Kup</a></td>
+        <td data-label="Domena">${item.domain}</td>
+        <td data-label="Cena">${item.price}</td>
+        <td data-label="Opis">${item.description}</td>
+        <td data-label="Dodano">${item.added}</td>
+        <td data-label="Akcja"><a href="${item.buyUrl}" class="buy-btn">Kup</a></td>
       `;
       table.appendChild(row);
     });
