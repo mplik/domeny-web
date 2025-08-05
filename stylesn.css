@@ -1,3 +1,39 @@
+/* Style dla sekcji dynamicznej tabeli domen */
+.for-sale-section {
+  margin: 40px auto;
+  padding: 30px 16px;
+  background: #f9f9fa;
+  border-radius: 10px;
+  max-width: 850px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.domains-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.domains-table th, .domains-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.buy-btn {
+  display: inline-block;
+  padding: 7px 18px;
+  background: #2d72d9;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background .2s;
+}
+
+.buy-btn:hover {
+  background: #174ea6;
+}
 /* Sekcja Ostatnio sprzedane domeny */
 .recently-sold-section {
   background: linear-gradient(120deg, #f8fafc 60%, #e0e7ff 100%);
