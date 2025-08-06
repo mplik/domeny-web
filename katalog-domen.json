@@ -33,5 +33,19 @@
     "extension": ".pl",
     "category": "technologia",
     "description": "Domena dla portalu o grach komputerowych."
+  },
+   {
+    "name": "idurl.pl",
+    "price": 1000,
+    "extension": ".pl",
+    "category": "technologia",
+    "description": "Domena dla portalu o adresach URL."
+  },
+   {
+    "name": "kghmpm.com",
+    "price": 1000,
+    "extension": ".com",
+    "category": "technologia",
+    "description": "Domena dla portalu."
   }
 ]
