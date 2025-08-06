@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog domen na sprzedaż</title>
+  <link rel="stylesheet" href="stylesn.css">
+</head>
+<body>
+  <h1>Katalog domen na sprzedaż</h1>
+  <section id="filters">
+    <input type="text" id="search" placeholder="Szukaj po nazwie domeny...">
+    <select id="extension-filter">
+      <option value="">Wszystkie końcówki</option>
+      <option value=".pl">.pl</option>
+      <option value=".com">.com</option>
+    </select>
+    <select id="category-filter">
+      <option value="">Wszystkie kategorie</option>
+      <option value="biznes">Biznes</option>
+      <option value="technologia">Technologia</option>
+      <option value="zdrowie">Zdrowie</option>
+    </select>
+    <input type="number" id="min-price" placeholder="Cena od">
+    <input type="number" id="max-price" placeholder="Cena do">
+  </section>
+  <section id="domains-list"></section>
+  <script src="katalog.js"></script>
+</body>
+</html>
