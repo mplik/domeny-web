@@ -1,0 +1,23 @@
+[
+  {
+    "name": "innowacyjna-domena.pl",
+    "price": 2500,
+    "extension": ".pl",
+    "category": "biznes",
+    "description": "Nowoczesna domena dla innowacyjnych projektów."
+  },
+  {
+    "name": "techstart.com",
+    "price": 4000,
+    "extension": ".com",
+    "category": "technologia",
+    "description": "Idealna domena dla startupu technologicznego."
+  },
+  {
+    "name": "zdrowie24.pl",
+    "price": 1800,
+    "extension": ".pl",
+    "category": "zdrowie",
+    "description": "Domena dla portalu o zdrowiu i medycynie."
+  }
+]
