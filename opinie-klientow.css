@@ -1,0 +1,59 @@
+/* Opinie klientów - stylizacja sekcji */
+.opinie-klientow-section {
+  padding: 48px 10px 40px 10px;
+  background: linear-gradient(135deg, #f7faff 0%, #e3e9f7 100%);
+  text-align: center;
+  margin-top: 40px;
+  border-top: 2px solid #e0e0e0;
+}
+.opinie-klientow-section h2 {
+  margin-bottom: 32px;
+  font-size: 2.2rem;
+  color: #1a237e;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.opinie-klientow-list {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.opinia-box {
+  background: #fff;
+  padding: 28px 20px 22px 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px #cfd8dc44;
+  flex: 1 1 260px;
+  max-width: 320px;
+  margin-bottom: 18px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e3e9f7;
+}
+.opinia-box:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px #b0bec5aa;
+}
+.opinia-box p {
+  font-style: italic;
+  color: #37474f;
+  font-size: 1.08em;
+  margin-bottom: 14px;
+}
+.opinia-box strong {
+  display: block;
+  margin-top: 10px;
+  color: #0077cc;
+  font-size: 1.05em;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 700px) {
+  .opinie-klientow-list {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .opinia-box {
+    max-width: 98%;
+    margin: 0 auto 14px auto;
+  }
+}
