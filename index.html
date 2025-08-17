@@ -32,13 +32,13 @@
      <script async src="https://js.stripe.com/v3/pricing-table.js"></script> <!--dodanie Stripe.js-->
   </head>
   <body>
-    <header>
-      <a href="index.html">
+    <header class="header">
+      <a href="index.html" class="logo">
         <img
           src="podfoldern/images/logo/MPLIK.PL_new_logo.png"
-          alt="Logo MPLIK.PL"
-          class="logo"></a>
-      <h1>Mplik.pl</h1>
+          alt="Logo MPLIK.PL">
+      </a>
+      <a href="tel:+48733120779" class="phone">+48 733 120 779</a>
       <nav>
         <ul id="nav-menu" style="display: none;">
           <li><a href="https://billing.stripe.com/p/login/fZedROdPQ6rb6CkdQQ">Panel klienta</a ></li>
@@ -48,7 +48,7 @@
           <li><a href="podfoldern/strona_wsparcia_w_podfolderzen.html">Strona wsparcia</a></li>
           <li><a href="podfoldern/faq.html">FAQ</a></li>
         </ul>
-        <button id="nav-toggle">Menu</button>
+        <button id="nav-toggle" aria-label="Otwórz menu">☰</button>
       </nav>
     </header>
     <main>
