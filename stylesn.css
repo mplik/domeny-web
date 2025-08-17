@@ -1,3 +1,10 @@
+/* Styl dla małej ikony telefonu przy numerze */
+.phone-icon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    vertical-align: middle;
+}
 @media (max-width: 600px) {
   .for-sale-section {
     padding: 10px 2px;
