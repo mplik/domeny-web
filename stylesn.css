@@ -24,6 +24,7 @@
     font-weight: bold;
     color: #2d72d9;
   }
+}
 /* Style dla sekcji dynamicznej tabeli domen */
 .for-sale-section {
   margin: 40px auto;
@@ -160,13 +161,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-image: url('podfoldern/background/img-background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    height: 250px;
-}
-
+    background-image: url('podfoldern/background/img-background.jpg'); /* Ścieżka do obrazu */
+    background-size: cover; /* Dopasowanie obrazu do całego nagłówka */
+    background-position: center; /* Wyśrodkowanie obrazu */
+    color: white; /* Kolor tekstu */
+    height: 250px; /* Ustaw wysokość nagłówka */
 }
 
 
