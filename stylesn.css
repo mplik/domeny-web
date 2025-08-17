@@ -1,3 +1,89 @@
+/* --- NOWOCZESNY RESPONSYWNY HEADER --- */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px 20px;
+    background-image: url('podfoldern/background/img-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 250px;
+}
+
+.header .logo img {
+    max-height: 60px;
+    width: auto;
+    display: block;
+}
+
+.header .phone {
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(44, 62, 80, 0.7);
+    padding: 8px 18px;
+    border-radius: 24px;
+    margin-left: auto;
+    transition: background 0.2s;
+}
+.header .phone:hover {
+    background: #2d72d9;
+    color: #fff;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+}
+
+.header #nav-toggle {
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: #fff;
+    margin-left: 16px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.header #nav-toggle:hover {
+    color: #2d72d9;
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        gap: 8px;
+        padding: 10px 8px;
+    }
+    .header .logo {
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .header .phone {
+        order: 2;
+        margin: 8px 0 0 0;
+        width: 100%;
+        text-align: left;
+        font-size: 1.2em;
+        border-radius: 12px;
+    }
+    .header nav {
+        order: 3;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header #nav-toggle {
+        align-self: flex-end;
+        margin: 0;
+    }
+}
 @media (max-width: 600px) {
   .for-sale-section {
     padding: 10px 2px;
