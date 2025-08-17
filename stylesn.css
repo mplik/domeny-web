@@ -65,14 +65,18 @@
         display: flex;
         justify-content: flex-start;
     }
-    .header .phone {
-        order: 2;
-        margin: 8px 0 0 0;
-        width: 100%;
-        text-align: left;
-        font-size: 1.2em;
-        border-radius: 12px;
-    }
+        .header .phone {
+            order: 2;
+            margin: 8px 0 0 0;
+            max-width: 100vw;
+            width: auto;
+            text-align: left;
+            font-size: 1.2em;
+            border-radius: 12px;
+            box-sizing: border-box;
+            display: block;
+            word-break: break-all;
+        }
     .header nav {
         order: 3;
         width: 100%;
