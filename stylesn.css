@@ -381,7 +381,8 @@ td.date {
     margin: 20px auto; /* Wyśrodkowanie kontenera */
     padding: 20px; /* Dodanie odstępów wewnętrznych */
     max-width: 600px; /* Maksymalna szerokość kontenera */
-    background-color: #f9f9f9; /* Jasne tło dla kontrastu */
+    background: url('podfoldern/background/topography.png') repeat;
+    background-color: #e6f5e9; /* Delikatny zielony filtr pod spodem */
     border: 1px solid #ddd; /* Subtelne obramowanie */
     border-radius: 10px; /* Zaokrąglone rogi */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Delikatny cień */
