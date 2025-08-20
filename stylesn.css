@@ -1,7 +1,7 @@
 /* Estetyczne powiększenie ikon zaufania na desktopie i mobile */
 .trust-icons img {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     display: inline-block;
     vertical-align: middle;
     object-fit: contain;
