@@ -1,3 +1,18 @@
+/* Baner z obrazkiem nad ikonami zaufania */
+.trust-banner {
+    display: block;
+    margin: 30px auto 24px auto;
+    max-width: 340px;
+    width: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #cfd8dc44;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.trust-banner:hover {
+    box-shadow: 0 6px 24px #b0bec544;
+    transform: scale(1.035);
+}
 @media (max-width: 600px) {
   .support-contact-box {
     flex-direction: column;
