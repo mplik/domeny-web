@@ -1,3 +1,8 @@
+/* Styl dla logo w stopce */
+.footer-logo {
+    width: 56px;
+    height: 56px;
+}
 /* Estetyczne powiększenie ikon zaufania na desktopie i mobile */
 .trust-icons img {
     width: 80px;
