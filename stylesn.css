@@ -1,3 +1,26 @@
+@media (min-width: 601px) {
+    .main-title {
+        position: relative;
+        text-align: left;
+    }
+    .main-title .panel-link {
+        position: absolute;
+        right: 32px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 0;
+    }
+}
+@media (max-width: 600px) {
+    .main-title {
+        text-align: center;
+    }
+    .main-title .panel-link {
+        position: static;
+        margin-left: 16px;
+        transform: none;
+    }
+}
 /* Styl linku do panelu klienta przy tytule */
 .panel-link {
     margin-left: 16px;
