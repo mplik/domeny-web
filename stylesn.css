@@ -11,7 +11,7 @@
     color: #174ea6;
 }
 .main-title i.fa-user-gear {
-    font-size: 1.1em;
+    font-size: 0.95em;
 }
 @media (max-width: 600px) {
     .main-title {
