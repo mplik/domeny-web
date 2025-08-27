@@ -13,12 +13,15 @@
 }
 @media (max-width: 600px) {
     .main-title {
+        position: relative;
         text-align: center;
     }
     .main-title .panel-link {
-        position: static;
-        margin-left: 16px;
-        transform: none;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 0;
     }
 }
 /* Styl linku do panelu klienta przy tytule */
