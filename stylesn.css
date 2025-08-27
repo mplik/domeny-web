@@ -1,3 +1,18 @@
+/* Styl linku do panelu klienta przy tytule */
+.panel-link {
+    margin-left: 16px;
+    color: #2d72d9;
+    font-size: 1.2em;
+    vertical-align: middle;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+.panel-link:hover {
+    color: #174ea6;
+}
+.main-title i.fa-user-gear {
+    font-size: 1.1em;
+}
 @media (max-width: 600px) {
     .main-title {
         font-size: 1.5rem;
