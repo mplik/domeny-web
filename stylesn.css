@@ -34,7 +34,7 @@
     color: #174ea6;
 }
 .main-title i.fa-user-gear {
-    font-size: 0.95em;
+    font-size: 0.6em;
 }
 @media (max-width: 600px) {
     .main-title {
@@ -45,7 +45,7 @@
 }
 /* Styl głównego tytułu strony */
 .main-title {
-    font-size: 2.4rem;
+    font-size: 1.2rem;
     color: #2d72d9;
     text-align: center;
     margin-top: 32px;
