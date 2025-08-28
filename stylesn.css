@@ -1,3 +1,13 @@
+.footer-dropdown-content {
+    display: none;
+    position: absolute;
+    background: #fff;
+    min-width: 160px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    border-radius: 6px;
+    z-index: 1;
+    margin-top: 4px;
+}
 /* --- Rozwijane menu w stopce --- */
 .footer-dropdown {
     position: relative;
