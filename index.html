@@ -40,6 +40,12 @@
         <i class="fa-solid fa-user-gear"></i>
       </a>
     </h1>
+    <!-- WYSZUKIWARKA DOMEN -->
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Wpisz nazwę domeny...">
+      <button id="search-btn" aria-label="Szukaj"><i class="fa fa-search"></i></button>
+    </div>
+    <div id="search-results"></div>
     <header class="header">
       <a href="index.html" class="logo">
         <img
@@ -254,8 +260,9 @@ fetch('domains-for-sale.json')
       }
     });
   </script>
-    <script src="recently-sold.js"></script>
-    <script src="opinie-klientow.js"></script>
+  <script src="recently-sold.js"></script>
+  <script src="opinie-klientow.js"></script>
+  <script src="search.js"></script>
   <!-- Skrypt do rozwijanego menu w stopce -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
