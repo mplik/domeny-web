@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
       return;
     }
     const filtered = domains.filter(d =>
-      d.nazwa && d.nazwa.toLowerCase().includes(query.toLowerCase())
+      d.name && d.name.toLowerCase().includes(query.toLowerCase())
     );
     resultsDiv.innerHTML = filtered.length
-      ? filtered.map(d => `<div class="result-item">${d.nazwa}</div>`).join('')
+      ? filtered.map(d => `<div class="result-item">${d.name}</div>`).join('')
       : '<div>Brak wyników.</div>';
   }
 
