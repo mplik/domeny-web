@@ -224,7 +224,7 @@ fetch('domains-for-sale.json')
 <footer>
   <div style="text-align:center; margin-bottom:8px;">
     <a href="https://mplik.eu/" target="_blank" rel="noopener noreferrer">
-  <img src="podfoldern/images/logo/MPLIK.PL_new_logo.png" alt="Logo firmy MPLIK.PL" class="footer-logo">
+      <img src="podfoldern/images/logo/MPLIK.PL_new_logo.png" alt="Logo firmy MPLIK.PL" class="footer-logo">
     </a>
   </div>
   <p>Skontaktuj się z nami: <a href="mailto:biuro@mplik.pl">biuro@mplik.pl</a>.</p>
@@ -233,6 +233,17 @@ fetch('domains-for-sale.json')
   <a href="https://x.com/EmmeRafa65531?t=_BQhiDiNd4Alss_AiPQaFg&s=09">X</a>,
   <a href="https://www.linkedin.com/in/rafa%C5%82-emme-mplik?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
   <p><a href="../index.html">Powrót do strony głównej</a></p>
+
+  <!-- Nowoczesne rozwijane menu w stopce -->
+  <div class="footer-dropdown">
+    <button class="footer-dropdown-btn">Więcej informacji ▼</button>
+    <div class="footer-dropdown-content">
+      <a href="podfoldern/aboutn.html">O nas</a>
+      <a href="podfoldern/faq.html">FAQ</a>
+      <a href="podfoldern/strona_wsparcia_w_podfolderzen.html">Wsparcie</a>
+      <!-- Możesz dodać inne mniej ważne linki -->
+    </div>
+  </div>
 </footer>
 
   <!-- Dodanie skryptu do przewijania strony -->
@@ -256,5 +267,21 @@ fetch('domains-for-sale.json')
   </script>
     <script src="recently-sold.js"></script>
     <script src="opinie-klientow.js"></script>
+  <!-- Skrypt do rozwijanego menu w stopce -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const btn = document.querySelector('.footer-dropdown-btn');
+      const dropdown = document.querySelector('.footer-dropdown');
+      if(btn && dropdown) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          dropdown.classList.toggle('open');
+        });
+        document.addEventListener('click', function(e) {
+          if (!dropdown.contains(e.target)) dropdown.classList.remove('open');
+        });
+      }
+    });
+  </script>
   </body>
 </html>
