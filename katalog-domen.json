@@ -117,5 +117,12 @@
     "extension": ".com",
     "category": "technologia",
     "description": "Domena dla portalu technologicznego."
+  },
+  {
+    "name": "mgrinz.pl",
+    "price": 3999,
+    "extension": ".pl",
+    "category": "technologia",
+    "description": "Domena dla portalu technologicznego."
   }
 ]
