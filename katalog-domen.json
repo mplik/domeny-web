@@ -124,5 +124,12 @@
     "extension": ".pl",
     "category": "technologia",
     "description": "Domena dla portalu technologicznego."
+  },
+    {
+    "name": "zenetwork.com",
+    "price": 15.099,
+    "extension": ".com",
+    "category": "technologia",
+    "description": "Domena dla portalu technologicznego."
   }
 ]
