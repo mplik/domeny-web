@@ -1,3 +1,22 @@
+/* --- Sticky slogan po przewinięciu strony --- */
+.slogan.sticky {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0.95);
+    z-index: 1000;
+    box-shadow: 0 8px 32px rgba(99,91,255,0.18);
+    padding: 12px 8vw 10px 8vw;
+    margin: 0;
+    max-width: 90vw;
+    font-size: 1.1em;
+    border-radius: 0 0 16px 16px;
+    animation: slideDown 0.4s cubic-bezier(.4,2,.6,1) 1;
+}
+@keyframes slideDown {
+    from { top: -80px; opacity: 0; }
+    to { top: 0; opacity: 1; }
+}
 /* --- Slogan nad opiniami klientów --- */
 .slogan {
         background: #f8f8fc;
