@@ -265,6 +265,17 @@ fetch('domains-for-sale.json')
   </script>
   <script src="recently-sold.js"></script>
   <script src="opinie-klientow.js"></script>
+  <script>
+    window.addEventListener('scroll', function() {
+      const slogan = document.querySelector('.slogan');
+      if (!slogan) return;
+      if (window.scrollY > 80) {
+        slogan.classList.add('sticky');
+      } else {
+        slogan.classList.remove('sticky');
+      }
+    });
+  </script>
   <script src="search.js"></script>
   <!-- Skrypt do rozwijanego menu w stopce -->
   <script>
