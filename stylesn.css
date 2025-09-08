@@ -2,17 +2,21 @@
     text-align: center;
 }
 @media (max-width: 600px) {
+    .cta-btn-container {
+        padding: 0 3vw;
+    }
     .cta-btn {
         font-size: 1em;
         padding: 12px 18px;
         border-radius: 20px;
-        width: 90vw;
-        max-width: 340px;
-        min-width: 140px;
+        width: 100%;
+        max-width: 320px;
+        min-width: 0;
         margin: 18px auto 0 auto;
-        display: inline-block;
+        display: block;
         text-align: center;
         white-space: normal;
+        box-sizing: border-box;
     }
     .cta-btn i {
         margin-left: 6px;
