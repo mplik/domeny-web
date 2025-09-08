@@ -1,3 +1,24 @@
+/* --- CTA BUTTON --- */
+.cta-btn {
+    display: inline-block;
+    padding: 16px 40px;
+    background: linear-gradient(90deg, #635bff 0%, #2d72d9 100%);
+    color: #fff;
+    font-size: 1.25em;
+    font-weight: 700;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 4px 18px rgba(99,91,255,0.13);
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    margin: 24px auto 0 auto;
+}
+.cta-btn:hover, .cta-btn:focus {
+    background: linear-gradient(90deg, #2d72d9 0%, #635bff 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(99,91,255,0.18);
+}
 /* --- Sticky slogan po przewinięciu strony --- */
 .slogan.sticky {
     position: fixed;
