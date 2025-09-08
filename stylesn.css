@@ -33,6 +33,39 @@
         line-height: 1.35;
         transition: box-shadow 0.2s, font-size 0.2s;
 }
+/* --- HERO IMAGE --- */
+.hero-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 36px auto;
+        max-width: 820px;
+        padding: 0 12px;
+}
+.hero-image-svg {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        box-shadow: 0 4px 24px rgba(99,91,255,0.10);
+        border-radius: 18px;
+        background: #fff;
+        transition: box-shadow 0.2s;
+}
+.hero-image-svg:hover {
+        box-shadow: 0 8px 32px rgba(99,91,255,0.18);
+}
+@media (max-width: 700px) {
+    .hero-image-container {
+        max-width: 98vw;
+        padding: 0 2vw;
+    }
+    .hero-image-svg {
+        max-width: 98vw;
+        border-radius: 10px;
+    }
+}
     .slogan span {
         display: block;
         font-size: 1.1em;
