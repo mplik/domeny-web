@@ -1,3 +1,29 @@
+/* Hero image section */
+.hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0 24px 0;
+    width: 100%;
+}
+
+.hero-image-svg {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 600px) {
+    .hero-image-container {
+        margin: 20px 0 16px 0;
+    }
+    .hero-image-svg {
+        border-radius: 8px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+        max-width: 98vw;
+    }
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
