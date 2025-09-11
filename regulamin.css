@@ -1,0 +1,124 @@
+@media (max-width: 600px) {
+  .regulamin-wrap {
+    max-width: 98vw;
+    margin: 8px 1vw;
+    padding: 12px 6vw;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.07);
+  }
+  .regulamin-wrap h1 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  .regulamin-wrap h2 {
+    font-size: 1em;
+    margin-top: 14px;
+  }
+  .regulamin-wrap p, .regulamin-wrap ol, .regulamin-wrap ul {
+    font-size: 0.98em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .regulamin-download {
+    width: 100%;
+    margin: 10px 0 0 0;
+    font-size: 1em;
+    padding: 10px 0;
+  }
+  .regulamin-link {
+    font-size: 1em;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .regulamin-link-meta {
+    display: block;
+    margin-left: 0;
+    font-size: 0.95em;
+    margin-bottom: 8px;
+  }
+}
+/* Link do regulaminu w stopce strony głównej */
+.regulamin-link {
+  color: #0b3a66;
+  font-weight: 600;
+  text-decoration: underline dotted;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+.regulamin-link:hover, .regulamin-link:focus {
+  color: #2d72d9;
+  text-decoration: underline solid;
+}
+.regulamin-link-meta {
+  color: #888;
+  font-size: 13px;
+  margin-left: 8px;
+}
+body.regulamin-page {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.45;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+}
+.regulamin-wrap {
+  max-width: 900px;
+  margin: 32px auto;
+  background: #fff;
+  padding: 28px 36px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+  border-radius: 12px;
+}
+.regulamin-wrap h1, .regulamin-wrap h2 {
+  color: #0b3a66;
+  margin: 0 0 12px;
+}
+.regulamin-wrap h1 {
+  font-size: 22px;
+}
+.regulamin-wrap h2 {
+  font-size: 16px;
+  margin-top: 20px;
+}
+.regulamin-wrap p {
+  margin: 8px 0;
+}
+.regulamin-wrap ol, .regulamin-wrap ul {
+  margin: 8px 0 16px 20px;
+}
+.regulamin-wrap code {
+  background: #eef;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.regulamin-meta {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 12px;
+}
+.regulamin-footer {
+  font-size: 13px;
+  color: #666;
+  margin-top: 26px;
+  border-top: 1px solid #e6e6e6;
+  padding-top: 12px;
+}
+.regulamin-download {
+  display: inline-block;
+  margin-right: 12px;
+  padding: 8px 14px;
+  background: #0b66a3;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+.regulamin-download:hover {
+  background: #2b7a2b;
+}
+@media print {
+  body.regulamin-page {background: #fff;}
+  .regulamin-wrap {box-shadow: none; margin: 0; padding: 0;}
+}
