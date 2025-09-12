@@ -131,5 +131,12 @@
     "extension": ".com",
     "category": "technologia",
     "description": "Domena dla portalu technologicznego."
+  },
+  {
+    "name": "adidos.pl",
+    "price": 362,
+    "extension": ".pl",
+    "category": "technologia",
+    "description": "Domena dla portalu technologicznego."
   }
 ]
