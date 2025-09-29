@@ -47,7 +47,7 @@ może potrwać w najlepszym przypadku od kilku do kilkunastu dni, o czym obie st
          a następnie przesłać wraz z wymaganymi dokumentami na wskazany we wniosku adres e-mail obecnego operatora lub za pomocą systemu online.
         </p>
 <div class="support-contact-box" style="display: flex; align-items: flex-start; gap: 28px; margin-bottom: 32px; margin-left: 0;">
-  <img src="images/Zegarek (1).png" alt="Zespół wsparcia domen" style="width: 240px; max-width: 48vw; min-width: 120px; height: auto; border-radius: 10px; box-shadow: 0 2px 12px #0002; margin-left: 6px;">
+  <img src="images/Zegarek (1).png" alt="Zespół wsparcia domen" class="fade-in-on-scroll" style="width: 240px; max-width: 48vw; min-width: 120px; height: auto; border-radius: 10px; box-shadow: 0 2px 12px #0002; margin-left: 6px;">
   <p class="cytat" id="colier" style="margin: 0; line-height: 1.6;">
     <strong>Kontakt:</strong><br>
     W przypadku pytań dotyczących cesji domeny lub potrzeby uzyskania dodatkowych informacji, prosimy o kontakt z naszym zespołem wsparcia:<br>
@@ -72,5 +72,22 @@ może potrwać w najlepszym przypadku od kilku do kilkunastu dni, o czym obie st
             <a href="https://www.linkedin.com/in/rafa%C5%82-emme-mplik?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
             <p><a href="../index.html">Powrót do strony głównej</a></p>
     </footer>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const fadeEls = document.querySelectorAll('.fade-in-on-scroll');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2 // obrazek musi być w 20% widoczny
+  });
+
+  fadeEls.forEach(el => observer.observe(el));
+});
+</script>
 </body>
 </html>
