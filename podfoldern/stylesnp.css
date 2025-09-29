@@ -1,3 +1,13 @@
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Baner z obrazkiem nad ikonami zaufania */
 .trust-banner {
     display: block;
