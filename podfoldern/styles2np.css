@@ -117,3 +117,9 @@ button:hover {
 .privacy-notice a:hover {
     color: #0056b3;/*podkreślenie po najechaniu myszką*/
 }
+
+@media (max-width: 600px) {
+  body::before {
+    left: -16px;
+  }
+}
