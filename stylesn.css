@@ -1,3 +1,23 @@
+.after-table-actions {
+  margin-top: 32px;
+  text-align: center;
+}
+.action-btn {
+  display: inline-block;
+  margin: 0 16px;
+  padding: 10px 26px;
+  background: #f6f7fa;
+  color: #2a2a2a;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.08em;
+  border: 1px solid #e0e6ef;
+  transition: background 0.2s, color 0.2s;
+}
+.action-btn:hover {
+  background: #e0e6ef;
+  color: #1a2a5a;
+}
 .cta-btn-container {
     text-align: center;
 }
