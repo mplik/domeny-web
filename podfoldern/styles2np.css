@@ -120,6 +120,6 @@ button:hover {
 
 @media (max-width: 600px) {
   body::before {
-    left: -16px;
+    left: -50px;
   }
 }
