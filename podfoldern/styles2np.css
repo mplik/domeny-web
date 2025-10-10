@@ -121,5 +121,6 @@ button:hover {
 @media (max-width: 600px) {
   body::before {
     left: -100px;
+    background-size: 90%;
   }
 }
