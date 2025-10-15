@@ -20,6 +20,13 @@
     "category": "zdrowie",
     "description": "Domena dla portalu o zdrowiu i medycynie."
   },
+  {
+    "name": "podrop.pl",
+    "price": 1800,
+    "extension": ".pl",
+    "category": "dropshipping",
+    "description": "Domena do sprzedaży i ciekawych treści online."
+  },
    {
     "name": "adresyurl.pl",
     "price": 1500,
