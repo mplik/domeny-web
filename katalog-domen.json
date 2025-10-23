@@ -41,6 +41,13 @@
     "category": "technologia",
     "description": "Domena dla portalu o grach komputerowych."
   },
+  {
+    "name": "emke.pl",
+    "price": 3200,
+    "extension": ".pl",
+    "category": "technologia",
+    "description": "Domena dla portalu o nowych technologiach"
+  },
    {
     "name": "idurl.pl",
     "price": 1000,
