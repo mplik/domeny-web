@@ -127,16 +127,4 @@ h1 {
     .team-photo-wrap { padding: 6px; }
 }
 
-/* Mobile-specific override to prevent image distortion on small screens */
-@media (max-width: 480px) {
-    .team-photo {
-        /* use viewport width for flexible sizing but keep ratio */
-        width: 90vw;
-        max-width: 360px;
-        height: auto !important;
-        object-fit: contain;
-        display: block;
-        margin: 0 auto;
-    }
-}
 
