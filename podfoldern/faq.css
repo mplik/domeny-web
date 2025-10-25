@@ -82,21 +82,28 @@ h1 {
 /* FAQ: pokaż całe zdjęcie (nie przycinaj) */
 
 .team-photo-wrap {
-    width: 100%;           /* wypełnij cały kontener poziomo */
-    margin: 20px 0;
+    /* ograniczamy maksymalną szerokość kontenera, żeby obraz
+       nie wypełniał całego ekranu na dużych monitorach */
+    max-width: 900px;
+    margin: 20px auto;     /* centrowanie */
     padding: 10px 8px 18px; /* przestrzeń u góry i dołu */
     box-sizing: border-box;
     text-align: center;
 }
 
 .team-photo {
-    width: 100%;
+    width: 100%;           /* wypełnia szerokość kontenera (maksymalnie 900px) */
     height: auto;          /* zachowaj proporcje i pokaż cały obraz */
     display: block;
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.08);
     background-color: #f0f2f4;
     object-position: center;
+}
+
+/* dodatkowe dopasowanie dla bardzo szerokich ekranów */
+@media (min-width: 1400px) {
+    .team-photo-wrap { max-width: 1000px; }
 }
 
 /* responsywne skalowanie */
