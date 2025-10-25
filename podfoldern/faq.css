@@ -79,37 +79,38 @@ h1 {
     text-align: center;
 }
 
-/* Dodane: styl dla zdjęcia zespołu w FAQ */
+/* FAQ: pokaż całe zdjęcie (nie przycinaj) */
 .team-photo-wrap {
     max-width: 900px;
-    margin: 18px auto;
-    padding: 0 12px;
+    margin: 20px auto;
+    padding: 14px 12px 24px; /* więcej przestrzeni u góry i dołu */
     box-sizing: border-box;
+    text-align: center;
 }
 
 .team-photo {
     width: 100%;
     height: auto;
-    max-height: 260px;
-    object-fit: cover;
+    max-height: 340px;     /* większa wysokość, aby obraz był dobrze widoczny */
+    object-fit: contain;   /* pokaż cały obraz bez przycinania */
     object-position: center;
     display: block;
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-    background-color: #f0f2f4;
+    background-color: #f0f2f4; /* tło widoczne jako 'pasy' gdy występują */
 }
 
-/* Skalowanie */
+/* responsywne skalowanie */
 @media (max-width: 1200px) {
-    .team-photo { max-height: 220px; }
-    .team-photo-wrap { max-width: 720px; padding: 0 10px; }
+    .team-photo { max-height: 300px; }
+    .team-photo-wrap { max-width: 720px; padding: 12px 10px 20px; }
 }
 @media (max-width: 800px) {
-    .team-photo { max-height: 180px; border-radius: 10px; }
-    .team-photo-wrap { padding: 0 8px; }
+    .team-photo { max-height: 260px; }
+    .team-photo-wrap { padding: 10px; }
 }
 @media (max-width: 600px) {
-    .team-photo { max-height: 140px; border-radius: 8px; }
-    .team-photo-wrap { padding: 0 6px; }
+    .team-photo { max-height: 200px; border-radius: 8px; }
+    .team-photo-wrap { padding: 8px; }
 }
 
