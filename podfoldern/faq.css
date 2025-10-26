@@ -134,4 +134,17 @@ h1 {
     .team-photo-wrap { padding: 6px; }
 }
 
+/* Caption under team photo */
+.team-caption {
+    margin-top: 0.5rem;
+    color: #374151;
+    font-size: clamp(13px, 1.4vw, 16px);
+    line-height: 1.3;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;
+}
+
 
