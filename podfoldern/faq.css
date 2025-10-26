@@ -108,6 +108,13 @@ h1 {
     object-position: center;
 }
 
+.team-photo:hover {
+    box-shadow: 0 12px 36px rgba(0,0,0,0.12);
+    transform: scale(1.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
 /* dodatkowe dopasowanie dla bardzo szerokich ekranów */
 @media (min-width: 1400px) {
     .team-photo-wrap { max-width: 1000px; }
