@@ -70,9 +70,24 @@ publishable-key="pk_live_51Ne3NEIMvKBMrhlEjYDipe2Y6fMD63oXUUQ9WKwshadTTQqXRUtlhB
 </stripe-pricing-table>
             </div>
             <h2 class="team">Nasz Zespół</h2>
-            <div class="team-expert-image">
-                <img src="images/eksperci_domenowi.png" alt="Eksperci domenowi" style="width: 100%; max-width: 800px; height: auto; margin: 20px 0;">
-            </div>
+            <figure class="team-expert-image" style="text-align:center; margin:20px 0; max-width:900px;">
+                <picture>
+                    <source
+                        srcset="images/moj_obrazek1-480.webp 480w, images/moj_obrazek2-800.webp 800w, images/moj_obrazek3-1200.webp 1200w"
+                        type="image/webp"
+                        sizes="(max-width:480px) 90vw, (max-width:1024px) 60vw, 800px"
+                    >
+                    <img
+                        src="images/nasi_eksperci.jpg"
+                        alt="Eksperci domenowi"
+                        width="1200" height="675"
+                        class="team-photo"
+                        loading="lazy"
+                        style="width:100%; max-width:900px; height:auto; display:block; margin:0 auto;"
+                    >
+                </picture>
+                <figcaption class="team-caption" style="font-size:0.95rem; color:#374151; margin-top:0.5rem;">Masz pytanie? Nasz zespół ma odpowiedź.</figcaption>
+            </figure>
             <div class="team-member">
                 <a href="rafal_emme_seo.html" target="_blank" rel="noopener noreferrer">
                 <img src="images/person/rafal_full_stack_dev.jpg" alt="Członek Zespołu 1">
