@@ -10,7 +10,8 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Zapobiegaj zniekształceniom: przytnij obraz do kontenera zamiast go rozciągać */
