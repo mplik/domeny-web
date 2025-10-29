@@ -167,3 +167,28 @@ a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
     margin-bottom: 30px; /* Add margin to the bottom */
 }
+
+/* Przyciski zapobiegające zniekształceniom obrazów używanych w sekcjach team/profile */
+/* Główne zdjęcie zespołu - zachowuje proporcje 16:9 i wypełnia kontener bez rozciągania */
+.team-expert-image .team-photo,
+.team-photo {
+    width: 100%;
+    max-width: 900px;
+    height: auto;        /* pozwala skalować proporcjonalnie */
+    display: block;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9; /* preferowana proporcja; wspierane w nowoczesnych przeglądarkach */
+    object-fit: cover;    /* przycięcie jeśli obraz ma inne proporcje, bez rozciągania */
+}
+
+/* Profilowe avatary: wymuszony kwadrat, zaokrąglony i przycięty do środka */
+.profile-photo,
+.team-member img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Drobne zabezpieczenie: jeśli inne reguły nadpisują, użyjemy nieco większej specyficzności w razie potrzeby */
