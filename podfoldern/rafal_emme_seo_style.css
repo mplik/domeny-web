@@ -13,6 +13,12 @@ body {
     margin-right: 10px;
 }
 
+/* Zapobiegaj zniekształceniom: przytnij obraz do kontenera zamiast go rozciągać */
+.profile-photo {
+    object-fit: cover;
+    display: block;
+}
+
 header {
     background-image: url('background/img-background.jpg'); /* Add the background image */
     background-size: cover; /* Make sure the image covers the entire header */
