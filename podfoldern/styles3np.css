@@ -1,3 +1,15 @@
+.team-photo {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
 .fade-in-on-scroll {
   opacity: 0;
   transform: translateY(30px);
