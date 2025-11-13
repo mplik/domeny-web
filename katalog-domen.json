@@ -76,6 +76,13 @@
     "category": "biznes",
     "description": "Domena dla portalu pomocy powodzianom."
   },
+   {
+    "name": "ciawa.pl",
+    "price": 1500,
+    "extension": ".pl",
+    "category": "technologia",
+    "description": "Domena dla portalu o adresach URL."
+  },
   {
     "name": "dorczel.pl",
     "price": 1000,
