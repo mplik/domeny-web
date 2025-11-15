@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Giełda Domen</title>
     <meta property="og:title" content="Giełda Domen" /> <!--dodanie metadanych Open Graph-->
-    <meta property="og:description" content="Find a domain - For Your branf" />
+    <meta property="og:description" content="Find a domain - For Your brand" />
     <meta property="og:image" content="https://github.com/mplik/domeny-web/blob/main/podfoldern/images/Kopia%20%E2%80%93%20Kopia%20%E2%80%93%20Fand%20a%20domain%20for%20Your%20brand%20(1200%20x%20630%20px)%20(4).png?raw=true" />
     <meta name="twitter:image" content="https://github.com/mplik/domeny-web/blob/main/podfoldern/images/Kopia%20%E2%80%93%20Kopia%20%E2%80%93%20Fand%20a%20domain%20for%20Your%20brand%20(1200%20x%20630%20px)%20(4).png?raw=true" />
-    <meta property="og:video" content="https://github.com/mplik/domeny-web/blob/main/videos/gielda_domen.mp4" /> <!--dodanie metadanych wideo-->
+    <meta property="og:video" content="https://github.com/mplik/domeny-web/blob/main/videos/gielda_domen.mp4?raw=true" /> <!--dodanie metadanych wideo-->
     <meta property="og:video:type" content="video/mp4" /> <!--dodanie metadanych wideo-->
     <meta property="og:video:width" content="640" /> <!--dodanie metadanych wideo-->
     <meta property="og:video:height" content="360" />
@@ -117,27 +117,29 @@
         <a href="katalog.html" class="btn" style="display:inline-block; padding:12px 32px; background:#0078d7; color:#fff; border-radius:6px; text-decoration:none; font-weight:600; font-size:1.1em; box-shadow:0 2px 8px rgba(0,0,0,0.07); transition:background 0.2s;">Zobacz wszystkie domeny</a>
       </div>
 <script>
+// Pobierz oferty domen i wstaw do tabeli (bez naruszania struktury tabeli)
 fetch('domains-for-sale.json')
   .then(response => response.json())
   .then(data => {
     const table = document.getElementById('domains-table-body');
+    if (!table) return;
     data.forEach(item => {
       const row = document.createElement('tr');
       row.innerHTML = `
         <td data-label="Domena">${item.domain}</td>
         <td data-label="Cena">${item.price}</td>
         <td data-label="Opis">${item.description}</td>
-        <td data-label="Dodano">${item.added}</td>
+        <td class="date" data-label="Dodano">${item.added}</td>
         <td data-label="Akcja"><a href="${item.buyUrl}" class="buy-btn" target="_blank" rel="noopener">Kup</a></td>
       `;
       table.appendChild(row);
     });
   })
   .catch(() => {
-    document.getElementById('domains-table-body').innerHTML = '<tr><td colspan="5">Błąd wczytywania ofert domen.</td></tr>';
+    const table = document.getElementById('domains-table-body');
+    if (table) table.innerHTML = '<tr><td colspan="5">Błąd wczytywania ofert domen.</td></tr>';
   });
 </script>
-        </table>
 
         <!-- Dodanie przycisku PayPal do zakupu domeny -->
          <div class="paypal-container">
@@ -146,9 +148,17 @@ fetch('domains-for-sale.json')
         <script src="https://www.paypal.com/sdk/js?client-id=BAAE33Ly_VtdkPxhXfr_NE7LYvzZERLpK6GQvYCzhuNwC74NdYlYbDavOuD1nbkyzPkCTNuAz6bwaqfCoA&components=hosted-buttons&disable-funding=venmo&currency=PLN"></script>
         <div id="paypal-container-W9H4HB7DZ5E86"></div>
         <script>
-          paypal.HostedButtons({
-            hostedButtonId: "W9H4HB7DZ5E86",
-          }).render("#paypal-container-W9H4HB7DZ5E86")
+          if (window.paypal && typeof paypal.HostedButtons === 'function') {
+            try {
+              paypal.HostedButtons({
+                hostedButtonId: "W9H4HB7DZ5E86",
+              }).render("#paypal-container-W9H4HB7DZ5E86");
+            } catch (err) {
+              console.warn('PayPal HostedButtons render failed:', err);
+            }
+          } else {
+            console.warn('PayPal SDK not loaded or HostedButtons not available.');
+          }
         </script>
          </div>
 
@@ -214,8 +224,8 @@ fetch('domains-for-sale.json')
 
     dateCells.forEach(cell => {
       const dateText = cell.textContent;
-      if (dayjs(dateText, 'YY-MM-DD', true).isValid()) {
-        const formattedDate = dayjs(dateText, 'YY-MM-DD').format('DD-MM-YY');
+      if (dayjs(dateText, 'YYYY-MM-DD', true).isValid()) {
+        const formattedDate = dayjs(dateText, 'YYYY-MM-DD').format('DD-MM-YYYY');
         cell.textContent = formattedDate;
       }
     });
@@ -232,7 +242,7 @@ fetch('domains-for-sale.json')
   <a href="https://www.facebook.com/share/g/16577e1THz/">Facebook</a>,
   <a href="https://x.com/EmmeRafa65531?t=_BQhiDiNd4Alss_AiPQaFg&s=09">X</a>,
   <a href="https://www.linkedin.com/in/rafa%C5%82-emme-mplik?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
-  <p><a href="../index.html">Powrót do strony głównej</a></p>
+  <p><a href="index.html">Powrót do strony głównej</a></p>
 
   <!-- Nowoczesne rozwijane menu w stopce -->
   <div class="footer-dropdown">
@@ -252,16 +262,20 @@ fetch('domains-for-sale.json')
 
   <!-- Dodanie skryptu do przewijania strony -->
   <script>
-    // Obsługa zamykania kontenera PayPal
-    document.querySelector(".close-button").addEventListener("click", function () {
-      const container = document.querySelector(".paypal-container");
-      container.style.display = "none"; // Ukrycie kontenera
-    });
-  
-    // Obsługa animacji podczas scrollowania
+    // Obsługa zamykania kontenera PayPal (null-safe)
+    const closeBtn = document.querySelector(".close-button");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", function () {
+        const container = document.querySelector(".paypal-container");
+        if (container) container.style.display = "none"; // Ukrycie kontenera
+      });
+    }
+
+    // Obsługa animacji podczas scrollowania (null-safe)
     document.addEventListener("scroll", function () {
       const container = document.querySelector(".paypal-container");
-  
+      if (!container) return;
+
       if (window.scrollY > 100) {
         container.classList.add("show");
       } else {
