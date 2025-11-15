@@ -25,7 +25,6 @@
     <meta name="msapplication-TileImage" content="podfoldern/images/logo/Stripe Climate icon - Big.png" />
     <meta name="msapplication-TileColor" content="#2d89ef" />
     <script src="menu.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!--dodanie biblioteki wykresów-->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script> <!-- dodanie biblioteki Day.js -->
     
     <!-- Google tag (gtag.js) --> 
@@ -159,8 +158,16 @@ fetch('domains-for-sale.json')
     <button class="nav-arrow" onclick="navigateToPage('next')">Następna &rarr;</button>
   </div>
 
-        <canvas id="popularity-chart" width="400" height="200"></canvas> <!--wykres popularności domen-->
-        <button onclick="updateChartData()">Aktualizuj wykres</button> <!--przycisk aktualizacji wykresu-->
+        <div class="iframe-chart-wrapper">
+          <iframe
+            src="https://mplik.github.io/Python-Project/wykres_interaktywny.html"
+            title="Interaktywny wykres domen"
+            aria-label="Interaktywny wykres domen"
+            loading="lazy"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
 
         <div id="pricing-table">
           <stripe-pricing-table pricing-table-id="prctbl_1R6pJzIMvKBMrhlEkDp11V6S"
@@ -175,38 +182,7 @@ fetch('domains-for-sale.json')
         </ul>
       </section>
     </main>
-    <script>
-    const ctx = document.getElementById('popularity-chart').getContext('2d'); //pobranie kontekstu
-    const popularityChart = new Chart(ctx, { //utworzenie nowego wykresu
-      type: 'bar', //typ wykreślenia
-      data: {
-        labels: ['coronegra.pl', 'veina.eu', 'zgkim.com', 'epaszport.com', 'virale.eu'], //etykiety
-        datasets: [{
-          label: 'Popularność domen', //etykieta
-          data: [10, 5, 3, 7, 8], //dane
-          backgroundColor: 'rgba(75, 192, 192, 0.2)', //kolor tła
-          borderColor: 'rgba(75, 192, 192, 1)', //kolor obramowania
-          borderWidth: 1 //grubość obramowania 
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true //początek osi Y od 0
-          }
-        }
-      }
-    });
-
-    function updateChartData() { //funkcja aktualizacji danych wykresu
-      const newLabels = ['adidos.pl', 'giermania.pl', 'mgrinz.com', 'nagicie.pl', 'kghmpm.com']; //nowe etykiety
-      const newData = [5, 10, 7, 3, 8]; //nowe dane
-      
-      popularityChart.data.labels = newLabels; //przypisanie nowych etykiet
-      popularityChart.data.datasets[0].data = newData; //przypisanie nowych danych
-      popularityChart.update(); //aktualizacja wykresu
-    }
-    </script>
+    <!-- Wykres zamieniony na iframe zewnętrzny; oryginalny skrypt Chart.js usunięty -->
 
 <script>
   function navigateToPage(direction) {
