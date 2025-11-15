@@ -159,8 +159,8 @@ fetch('domains-for-sale.json')
     <button class="nav-arrow" onclick="navigateToPage('next')">Następna &rarr;</button>
   </div>
 
-        <canvas id="popularity-chart" width="400" height="200"></canvas> <!--wykres popularności domen-->
-        <button onclick="updateChartData()">Aktualizuj wykres</button> <!--przycisk aktualizacji wykresu-->
+        <canvas id="popularity-chart" width="400" height="200" aria-label="Wykres popularności domen"></canvas> <!--wykres popularności domen-->
+        <button id="refresh-chart-btn">Odśwież wykres</button> <!--przycisk aktualizacji wykresu-->
 
         <div id="pricing-table">
           <stripe-pricing-table pricing-table-id="prctbl_1R6pJzIMvKBMrhlEkDp11V6S"
@@ -176,36 +176,54 @@ fetch('domains-for-sale.json')
       </section>
     </main>
     <script>
-    const ctx = document.getElementById('popularity-chart').getContext('2d'); //pobranie kontekstu
-    const popularityChart = new Chart(ctx, { //utworzenie nowego wykresu
-      type: 'bar', //typ wykreślenia
+    // Inicjalizacja wykresu z pustymi danymi; dane będą pobierane z `domains-for-sale.json`.
+    const ctx = document.getElementById('popularity-chart').getContext('2d');
+    const popularityChart = new Chart(ctx, {
+      type: 'bar',
       data: {
-        labels: ['coronegra.pl', 'veina.eu', 'zgkim.com', 'epaszport.com', 'virale.eu'], //etykiety
+        labels: [],
         datasets: [{
-          label: 'Popularność domen', //etykieta
-          data: [10, 5, 3, 7, 8], //dane
-          backgroundColor: 'rgba(75, 192, 192, 0.2)', //kolor tła
-          borderColor: 'rgba(75, 192, 192, 1)', //kolor obramowania
-          borderWidth: 1 //grubość obramowania 
+          label: 'Popularność domen',
+          data: [],
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 1
         }]
       },
       options: {
         scales: {
-          y: {
-            beginAtZero: true //początek osi Y od 0
-          }
-        }
+          y: { beginAtZero: true }
+        },
+        responsive: true,
+        maintainAspectRatio: false
       }
     });
 
-    function updateChartData() { //funkcja aktualizacji danych wykresu
-      const newLabels = ['adidos.pl', 'giermania.pl', 'mgrinz.com', 'nagicie.pl', 'kghmpm.com']; //nowe etykiety
-      const newData = [5, 10, 7, 3, 8]; //nowe dane
-      
-      popularityChart.data.labels = newLabels; //przypisanie nowych etykiet
-      popularityChart.data.datasets[0].data = newData; //przypisanie nowych danych
-      popularityChart.update(); //aktualizacja wykresu
+    // Pobiera plik JSON z ofertami domen i aktualizuje wykres.
+    async function fetchAndUpdateChart() {
+      const url = 'domains-for-sale.json?t=' + Date.now(); // cache-bust
+      try {
+        const res = await fetch(url, { cache: 'no-store' });
+        if (!res.ok) throw new Error('Błąd sieci: ' + res.status);
+        const items = await res.json();
+
+        const labels = items.map(i => i.domain || '');
+        const values = items.map(i => Number(i.popularity ?? 0));
+
+        popularityChart.data.labels = labels;
+        popularityChart.data.datasets[0].data = values;
+        popularityChart.update();
+      } catch (err) {
+        console.error('Nie udało się załadować danych wykresu:', err);
+      }
     }
+
+    // Wywołaj raz przy starcie i podłącz przycisk odświeżania
+    document.addEventListener('DOMContentLoaded', function() {
+      fetchAndUpdateChart();
+      const btn = document.getElementById('refresh-chart-btn');
+      if (btn) btn.addEventListener('click', fetchAndUpdateChart);
+    });
     </script>
 
 <script>
