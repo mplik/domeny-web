@@ -1024,3 +1024,44 @@ footer a:hover {
       font-size: 0.95rem;
     }
   }
+/* --- Responsive styles for embedded interactive chart (iframe) --- */
+.iframe-chart-wrapper {
+    max-width: 980px;
+    margin: 28px auto;
+    padding: 0 12px;
+}
+.iframe-chart-wrapper iframe {
+    width: 100%;
+    height: 600px; /* desktop default */
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.12);
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .iframe-chart-wrapper iframe {
+        height: 480px;
+    }
+}
+
+@media (max-width: 600px) {
+    .iframe-chart-wrapper {
+        padding: 0 4vw;
+    }
+    .iframe-chart-wrapper iframe {
+        height: 360px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .iframe-chart-wrapper iframe {
+        height: 320px;
+    }
+}
+
+/* Optional: ensure iframe scales nicely in legacy contexts */
+.iframe-chart-wrapper iframe[loading] {
+    min-height: 200px;
+}
