@@ -1032,7 +1032,9 @@ footer a:hover {
 }
 .iframe-chart-wrapper iframe {
     width: 100%;
-    height: 600px; /* desktop default */
+    height: min(80vh, 1000px); /* prefer viewport-relative height on large screens */
+    min-height: 600px; /* ensure visible area on desktop */
+    max-height: 1200px;
     border: 0;
     border-radius: 12px;
     box-shadow: 0 6px 28px rgba(0,0,0,0.12);
@@ -1041,7 +1043,15 @@ footer a:hover {
 
 @media (max-width: 900px) {
     .iframe-chart-wrapper iframe {
-        height: 480px;
+                height: 480px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .iframe-chart-wrapper iframe {
+        /* on very wide screens give more vertical space */
+        height: min(75vh, 1100px);
+        min-height: 800px;
     }
 }
 
