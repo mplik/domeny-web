@@ -994,36 +994,6 @@ footer a:hover {
 }
 
 /* Stylizacja dla sekcji z wideo promocyjnym */
-  .video-container {
-    position: relative;
-    width: 100%;
-    max-width: 560px;
-    margin: 0 auto;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
-  }
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
-  }
-  .video-desc {
-    margin-top: 12px;
-    color: #444;
-    font-size: 1rem;
-  }
-  @media (max-width: 480px) {
-    .promo-video h2 {
-      font-size: 1.2rem;
-    }
-    .video-desc {
-      font-size: 0.95rem;
-    }
-  }
 /* --- Responsive styles for embedded interactive chart (iframe) --- */
 .iframe-chart-wrapper {
     max-width: 980px;
