@@ -33,5 +33,12 @@
     "description": "Świetna dla startupów technologicznych.",
     "added": "2025-10-18",
     "buyUrl": "https://buy.stripe.com/cN26rJ9ZJ1DffU48wx"
+  },
+  {
+    "domain": "ciawa.pl",
+    "price": "1500 zł",
+    "description": "Idealna dla startupów",
+    "buyUrl": "https://buy.stripe.com/cN26rJ9ZJ1DffU48wx",
+    "added": "2025-12-02"
   }
 ]
