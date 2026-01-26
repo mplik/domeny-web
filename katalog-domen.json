@@ -28,20 +28,6 @@
     "description": "Domena do sprzedaży i ciekawych treści online."
   },
    {
-    "name": "adresyurl.pl",
-    "price": 1500,
-    "extension": ".pl",
-    "category": "technologia",
-    "description": "Domena dla portalu o adresach URL."
-  },
-   {
-    "name": "giermania.pl",
-    "price": 1000,
-    "extension": ".pl",
-    "category": "technologia",
-    "description": "Domena dla portalu o grach komputerowych."
-  },
-   {
     "name": "emke.pl",
     "price": 3200,
     "extension": ".pl",
@@ -49,76 +35,20 @@
     "description": "Domena dla portalu o nowych technologiach"
   },
    {
-    "name": "idurl.pl",
-    "price": 1000,
-    "extension": ".pl",
-    "category": "technologia",
-    "description": "Domena dla portalu o adresach URL."
-  },
-   {
-    "name": "kghmpm.com",
-    "price": 1000,
-    "extension": ".com",
-    "category": "technologia",
-    "description": "Domena dla portalu."
-  },
-    {
     "name": "ciawa.pl",
     "price": 1500,
     "extension": ".pl",
     "category": "technologia",
     "description": "Domena dla portalu o adresach URL."
   },
-   {
-    "name": "dorczel.pl",
-    "price": 1000,
-    "extension": ".pl",
-    "category": "biznes",
-    "description": "Domena dla działalności gospodarczej."
-  },
-   {
-    "name": "alismanore.pl",
-    "price": 1000,
-    "extension": ".pl",
-    "category": "biznes",
-    "description": "Domena związana z technologią."
-  },
-   {
-    "name": "veina.pl",
-    "price": 1800,
-    "extension": ".pl",
-    "category": "technologia",
-    "description": "Domena dla portalu technologicznego."
-  },
-   {
-    "name": "ojuno.pl",
-    "price": 1000,
-    "extension": ".pl",
-    "category": "technologia",
-    "description": "Domena dla portalu platformy technologicznej."
-  },
-   {
-    "name": "veina.eu",
-    "price": 1000,
-    "extension": ".eu",
-    "category": "technologia",
-    "description": "Domena dla portalu technologicznego lub startupu."
-  },
-   {
-    "name": "nagicie.pl",
-    "price": 999,
-    "extension": ".pl",
-    "category": "zdrowie",
-    "description": "Domena dla portalu zdrowia lub wellness."
-  },
-   {
+   { 
     "name": "stopbrudasom.pl",
     "price": 999,
     "extension": ".pl",
     "category": "zdrowie",
     "description": "Domena dla portalu zdrowia lub wellness."
-  },
-   {
+    },
+     {
     "name": "mgrinz.pl",
     "price": 3999,
     "extension": ".pl",
