@@ -6,21 +6,21 @@
     "category": "biznes",
     "description": "Nowoczesna domena dla innowacyjnych projektów."
   },
-  {
+   {
     "name": "mgrinz.com",
     "price": 1500,
     "extension": ".com",
     "category": "technologia",
     "description": "Idealna domena dla startupu technologicznego."
   },
-  {
+   {
     "name": "zdrowie24.pl",
     "price": 1800,
     "extension": ".pl",
     "category": "zdrowie",
     "description": "Domena dla portalu o zdrowiu i medycynie."
   },
-  {
+   {
     "name": "podrop.pl",
     "price": 1800,
     "extension": ".pl",
@@ -41,7 +41,7 @@
     "category": "technologia",
     "description": "Domena dla portalu o grach komputerowych."
   },
-  {
+   {
     "name": "emke.pl",
     "price": 3200,
     "extension": ".pl",
@@ -63,97 +63,76 @@
     "description": "Domena dla portalu."
   },
     {
-    "name": "powodzianie.com",
-    "price": 1000,
-    "extension": ".com",
-    "category": "biznes",
-    "description": "Domena dla portalu pomocy powodzianom."
-  },
-    {
-    "name": "powodziani.pl",
-    "price": 1000,
-    "extension": ".pl",
-    "category": "biznes",
-    "description": "Domena dla portalu pomocy powodzianom."
-  },
-   {
     "name": "ciawa.pl",
     "price": 1500,
     "extension": ".pl",
     "category": "technologia",
     "description": "Domena dla portalu o adresach URL."
   },
-  {
+   {
     "name": "dorczel.pl",
     "price": 1000,
     "extension": ".pl",
     "category": "biznes",
     "description": "Domena dla działalności gospodarczej."
   },
-  {
+   {
     "name": "alismanore.pl",
     "price": 1000,
     "extension": ".pl",
     "category": "biznes",
     "description": "Domena związana z technologią."
   },
-  {
+   {
     "name": "veina.pl",
     "price": 1800,
     "extension": ".pl",
     "category": "technologia",
     "description": "Domena dla portalu technologicznego."
   },
-  {
+   {
     "name": "ojuno.pl",
     "price": 1000,
     "extension": ".pl",
     "category": "technologia",
     "description": "Domena dla portalu platformy technologicznej."
   },
-  {
+   {
     "name": "veina.eu",
     "price": 1000,
     "extension": ".eu",
     "category": "technologia",
     "description": "Domena dla portalu technologicznego lub startupu."
   },
-  {
+   {
     "name": "nagicie.pl",
     "price": 999,
     "extension": ".pl",
     "category": "zdrowie",
     "description": "Domena dla portalu zdrowia lub wellness."
   },
-  {
+   {
     "name": "stopbrudasom.pl",
     "price": 999,
     "extension": ".pl",
     "category": "zdrowie",
     "description": "Domena dla portalu zdrowia lub wellness."
   },
-  {
-    "name": "epaszport.com",
-    "price": 900,
-    "extension": ".com",
-    "category": "technologia",
-    "description": "Domena dla portalu technologicznego."
-  },
-  {
+   {
     "name": "mgrinz.pl",
     "price": 3999,
     "extension": ".pl",
     "category": "technologia",
     "description": "Domena dla portalu technologicznego."
   },
-    {
+   {
     "name": "zenetwork.com",
-    "price": 15.099,
+    "price": 15099,
     "extension": ".com",
     "category": "technologia",
     "description": "Domena dla portalu technologicznego."
   },
-  {
+   {
     "name": "adidos.pl",
     "price": 362,
     "extension": ".pl",
