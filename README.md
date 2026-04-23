@@ -73,4 +73,6 @@ Ten projekt jest dostępny na licencji MIT.
 [watchYouTubeShort]: https://youtube.com/shorts/lLUIFieyUPs?si=g5q1jRpHASltx2Q5
 [zobacz zrzut ekranu]: https://github.com/mplik/domeny-web/blob/main/zasoby/zrzut_ekranu-gie%C5%82da_domen_plik.readme.md.png?raw=true
 
+[Pobierz ZIP](https://bit.ly/4Letterhead)
+
 Test połączenia SSh wykonany poprawnie
