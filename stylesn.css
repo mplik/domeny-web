@@ -298,12 +298,13 @@
         position: relative;
         text-align: left;
     }
-    .main-title .panel-link {
+    .main-title .panel-link-container {
         position: absolute;
         right: 32px;
         top: 50%;
         transform: translateY(-50%);
-        margin-left: 0;
+        display: flex;
+        gap: 15px;
     }
 }
 @media (max-width: 600px) {
@@ -313,13 +314,32 @@
         padding-left: 32px;
         padding-right: 40px;
     }
-    .main-title .panel-link {
+    .main-title .panel-link-container {
         position: absolute;
         right: 16px;
         top: 50%;
         transform: translateY(-50%);
-        margin-left: 0;
+        display: flex;
+        gap: 10px;
     }
+}
+
+.panel-link-container .panel-link {
+    margin-left: 0;
+}
+
+.qr-link {
+    color: #ff5722 !important;
+}
+
+.qr-link i {
+    animation: qr-pulse 2s infinite ease-in-out;
+}
+
+@keyframes qr-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+    100% { transform: scale(1); }
 }
 /* Styl linku do panelu klienta przy tytule */
 .panel-link {
