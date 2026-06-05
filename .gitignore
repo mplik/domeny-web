@@ -1,3 +1,6 @@
 # Skrypty lokalne - nie wysyłaj do repozytorium
 add_domain.py
 remove_domain.py
+
+# Blokada ciężkich plików wideo
+*.mp4
