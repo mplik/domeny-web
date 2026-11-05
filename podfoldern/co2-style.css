@@ -239,6 +239,16 @@ figcaption {
  color: #333;
  margin-top: 0.4rem;
 }
+
+footer {
+    margin-top: 2rem;
+    padding: 1.25rem 1rem;
+    background: #3f6342;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
 .full-report-link {
  display: inline-block;
  margin-top: 0.5rem;
