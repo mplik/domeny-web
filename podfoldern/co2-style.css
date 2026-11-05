@@ -7,6 +7,11 @@ body {
     padding: 0;
 }
 
+a:focus-visible {
+    outline: 3px solid #8abf8d;
+    outline-offset: 3px;
+}
+
 .back-home {
     display: inline-block;
     margin: 1rem 2rem 0;
