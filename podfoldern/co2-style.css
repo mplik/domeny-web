@@ -180,6 +180,20 @@ figcaption {
  color: #333;
  margin-top: 0.4rem;
 }
+.full-report-link {
+ display: inline-block;
+ margin-top: 0.5rem;
+ padding: 0.55rem 0.75rem;
+ background: #3f6342;
+ color: #fff;
+ text-decoration: none;
+ border-radius: 4px;
+ font-size: 0.85rem;
+}
+.full-report-link:hover,
+.full-report-link:focus-visible {
+ background: #2d4a2f;
+}
 @media (max-width: 700px) {
  .qr-box { float: none; margin: 0 auto 1rem; width: 180px; }
 }
