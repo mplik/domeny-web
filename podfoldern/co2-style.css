@@ -186,6 +186,14 @@ figcaption {
         margin: 1em;
         padding: 1em;
     }
+
+    .wykresy figure {
+        flex-basis: 100%;
+    }
+
+    .wykresy figure img {
+        width: 100%;
+    }
     
     .wykresy {
         gap: 16px;
