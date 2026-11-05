@@ -7,6 +7,20 @@ body {
     padding: 0;
 }
 
+.back-home {
+    display: inline-block;
+    margin: 1rem 2rem 0;
+    color: #3f6342;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.back-home:hover,
+.back-home:focus-visible {
+    color: #2d4a2f;
+    text-decoration: underline;
+}
+
 header {
     background: #3f6342;
     color: #fff;
