@@ -111,6 +111,34 @@ figcaption {
     color: #2d4a2f;
 }
 
+.impact-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 1.5rem;
+}
+
+.impact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1rem;
+    border: 1px solid #d6e5d6;
+    border-radius: 6px;
+    background: #fff;
+    text-align: center;
+}
+
+.impact-item strong {
+    color: #3f6342;
+    font-size: 1.35rem;
+}
+
+.impact-item span {
+    color: #555;
+    font-size: 0.9rem;
+}
+
 /* Nawigacja raportów */
 .nawigacja-raporty ul {
     display: flex;
@@ -169,6 +197,10 @@ figcaption {
 }
 
 @media (max-width: 600px) {
+    .impact-summary {
+        grid-template-columns: 1fr;
+    }
+
     .nawigacja-raporty ul {
         flex-direction: column;
         gap: 10px;
